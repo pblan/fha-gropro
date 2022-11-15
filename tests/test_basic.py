@@ -1,6 +1,9 @@
 import unittest
 
-from project_name.Calculator import Calculator
+from project_name import Calculator
+
+# to run the tests, run the following command:
+# python -m unittest tests\test_basic.py
 
 
 class TestCalculator(unittest.TestCase):

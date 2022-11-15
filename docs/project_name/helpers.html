@@ -54,17 +54,21 @@
 
                         <label class="view-source-button" for="mod-helpers-view-source"><span>View Source</span></label>
 
-                        <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a>    <span class="sd">&quot;&quot;&quot;Adds two numbers together</span>
+                        <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="kn">import</span> <span class="nn">logging</span>
+</span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a>
 </span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="sd">    Args:</span>
-</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="sd">        a (int): The first number</span>
-</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="sd">        b (int): The second number</span>
-</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a>
-</span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="sd">    Returns:</span>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="sd">        int: The sum of the two numbers</span>
-</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a><span class="sd">    &quot;&quot;&quot;</span>
-</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a>    <span class="sd">&quot;&quot;&quot;Adds two numbers together</span>
+</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a>
+</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="sd">    Args:</span>
+</span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="sd">        a (int): The first number</span>
+</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="sd">        b (int): The second number</span>
+</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>
+</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a><span class="sd">    Returns:</span>
+</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="sd">        int: The sum of the two numbers</span>
+</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>
+</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </span></pre></div>
 
 
@@ -80,17 +84,18 @@
 
     </div>
     <a class="headerlink" href="#sum"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="sum-2"><a href="#sum-2"><span class="linenos"> 2</span></a><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-</span><span id="sum-3"><a href="#sum-3"><span class="linenos"> 3</span></a>    <span class="sd">&quot;&quot;&quot;Adds two numbers together</span>
-</span><span id="sum-4"><a href="#sum-4"><span class="linenos"> 4</span></a>
-</span><span id="sum-5"><a href="#sum-5"><span class="linenos"> 5</span></a><span class="sd">    Args:</span>
-</span><span id="sum-6"><a href="#sum-6"><span class="linenos"> 6</span></a><span class="sd">        a (int): The first number</span>
-</span><span id="sum-7"><a href="#sum-7"><span class="linenos"> 7</span></a><span class="sd">        b (int): The second number</span>
-</span><span id="sum-8"><a href="#sum-8"><span class="linenos"> 8</span></a>
-</span><span id="sum-9"><a href="#sum-9"><span class="linenos"> 9</span></a><span class="sd">    Returns:</span>
-</span><span id="sum-10"><a href="#sum-10"><span class="linenos">10</span></a><span class="sd">        int: The sum of the two numbers</span>
-</span><span id="sum-11"><a href="#sum-11"><span class="linenos">11</span></a><span class="sd">    &quot;&quot;&quot;</span>
-</span><span id="sum-12"><a href="#sum-12"><span class="linenos">12</span></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="sum-5"><a href="#sum-5"><span class="linenos"> 5</span></a><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="sum-6"><a href="#sum-6"><span class="linenos"> 6</span></a>    <span class="sd">&quot;&quot;&quot;Adds two numbers together</span>
+</span><span id="sum-7"><a href="#sum-7"><span class="linenos"> 7</span></a>
+</span><span id="sum-8"><a href="#sum-8"><span class="linenos"> 8</span></a><span class="sd">    Args:</span>
+</span><span id="sum-9"><a href="#sum-9"><span class="linenos"> 9</span></a><span class="sd">        a (int): The first number</span>
+</span><span id="sum-10"><a href="#sum-10"><span class="linenos">10</span></a><span class="sd">        b (int): The second number</span>
+</span><span id="sum-11"><a href="#sum-11"><span class="linenos">11</span></a>
+</span><span id="sum-12"><a href="#sum-12"><span class="linenos">12</span></a><span class="sd">    Returns:</span>
+</span><span id="sum-13"><a href="#sum-13"><span class="linenos">13</span></a><span class="sd">        int: The sum of the two numbers</span>
+</span><span id="sum-14"><a href="#sum-14"><span class="linenos">14</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="sum-15"><a href="#sum-15"><span class="linenos">15</span></a>
+</span><span id="sum-16"><a href="#sum-16"><span class="linenos">16</span></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </span></pre></div>
 
 
