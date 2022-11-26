@@ -1,14 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='project_name',
+    name="project_name",
     packages=find_packages(),
-    description='IHK Große Prog, Winter 2022',
+    description="IHK Große Prog, Winter 2022",
     long_description="""IHK Große Prog, Winter 2022
 
     # Aufgabenstellung
     ToDo: Aufgabenstellung einfügen
     """,
-    url='',
-    author='Patrick Gustav Blaneck',
+    url="https://paddel.xyz",
+    author="Patrick Gustav Blaneck",
+    license="GPL-3.0-or-later",
 )

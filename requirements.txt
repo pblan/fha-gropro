@@ -1,2 +1,4 @@
-unittest
+black
+configparser
 pdoc
+setuptools

@@ -2,5 +2,5 @@
 .. include:: ../README.md
 """
 
-from .tools import Calculator, Parser
-from .io import FileHandler
+from .tools import *
+from .io import *

@@ -1,18 +1,19 @@
 import logging
+import os
 
 
 class FileHandler:
     """📁 A class for handling input and output"""
 
-    input_path = None
-    output_path = None
+    input = None
+    output = None
 
-    def __init__(self, input_path: str, output_path: str) -> None:
+    def __init__(self, input: str, output: str) -> None:
         """Initializes the FileHandler class
 
         Args:
-            input_path (str): The path to the file to read
-            output_path (str): The path to the file to write
+            input (str): The path to the file(s) to read
+            output (str): The path to the directory to write
 
         Returns:
             None
@@ -20,10 +21,11 @@ class FileHandler:
 
         self.logger = logging.getLogger(__name__)
         self.logger.info(
-            f'Initializing FileHandler with file path {repr(input_path)}')
+            f"Initializing FileHandler with input path {repr(input)} and output path {repr(output)}"
+        )
 
-        self.input_path = input_path
-        self.output_path = output_path
+        self.input = input
+        self.output = os.path.join(output, os.path.basename(input))
 
     def read_file(self) -> str:
         """Reads the file
@@ -32,9 +34,9 @@ class FileHandler:
             str: The contents of the file
         """
 
-        self.logger.info(f'Reading file {repr(self.input_path)}')
+        self.logger.info(f"Reading file {repr(self.input)}")
 
-        with open(self.input_path, 'r') as file:
+        with open(self.input, "r") as file:
             return file.read()
 
     def write_file(self, contents: str) -> None:
@@ -47,10 +49,9 @@ class FileHandler:
             None
         """
 
-        self.logger.info(
-            f'Writing {repr(contents[:15] + "...") if len(contents) > 15 else repr(contents)} to file {repr(self.output_path)}')
+        self.logger.info(f"Writing {repr(contents)} to file {repr(self.output)}")
 
-        with open(self.output_path, 'w') as file:
+        with open(self.output, "w") as file:
             file.write(contents)
 
     def append_file(self, contents: str) -> None:
@@ -63,7 +64,6 @@ class FileHandler:
             None
         """
 
-        self.logger.info(
-            f'Appending {repr(contents[:15] + "...") if len(contents) > 15 else repr(contents)} to file {repr(self.output_path)}')
-        with open(self.output_path, 'a') as file:
+        self.logger.info(f"Appending {repr(contents)} to file {repr(self.output)}")
+        with open(self.output, "a") as file:
             file.write(contents)

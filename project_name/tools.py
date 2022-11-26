@@ -1,4 +1,45 @@
 import logging
+import time
+import os
+
+
+def find_location(input: str) -> str:
+    """🔍 Finds the location of the input file/directory
+    Looks in the following locations:
+        - The current working directory
+        - The directory of the script
+        - The directory of the script's parent
+        - The home directory
+        - The root directory
+
+    Args:
+        input (str): The path to the input file/directory
+
+    Returns:
+        str: The path to the input file/directory
+    """
+
+    try:
+        logger = logging.getLogger(__name__)
+        logger.info(f"Finding location of file/directory {repr(input)}")
+    except:
+        pass
+
+    locations = [
+        os.getcwd(),  # Current working directory
+        os.path.dirname(os.path.realpath(__file__)),  # Directory of the script
+        os.path.dirname(
+            os.path.dirname(os.path.realpath(__file__))
+        ),  # Directory of the script's parent
+        os.path.expanduser("~"),  # Home directory
+        os.path.sep,  # Root directory
+    ]
+
+    for location in locations:
+        if os.path.exists(os.path.join(location, input)):
+            return os.path.join(location, input)
+
+    raise FileNotFoundError(f"Could not find file/directory {repr(input)}")
 
 
 class Parser:
@@ -15,7 +56,7 @@ class Parser:
         """
 
         self.logger = logging.getLogger(__name__)
-        self.logger.info(f'Initializing Parser with string {repr(string[:15] + "...") if len(string) > 15 else repr(string)}')
+        self.logger.info(f"Initializing Parser with string {repr(string)}")
         self.string = string
 
     def parse(self) -> str:
@@ -26,68 +67,13 @@ class Parser:
         # example input file
         """
 
-        self.logger.info(f'Parsing string {repr(self.string[:15] + "...") if len(self.string) > 15 else repr(self.string)}')
+        self.logger.info(f"Parsing string {repr(self.string)}")
 
-        return self.string + '\n# but now it\'s parsed!'
+        start_time = time.time()
 
+        total_time = time.time() - start_time
+        total_time = round(total_time * 1000, 3)
 
-class Calculator:
-    """🧮 A calculator class"""
+        self.logger.info(f"Finished parsing string in {total_time}ms")
 
-    color: str = 'blue'
-
-    def __init__(self, color: str = 'blue') -> None:
-        """Initializes the calculator
-
-        Args:
-            color (str, optional): The color of the calculator. Defaults to 'blue'.
-
-        Returns:
-            None
-        """
-
-        self.logger = logging.getLogger(__name__)
-        self.logger.info(f'Initializing calculator with color {color}')
-
-        self.color = color
-
-    def sum(a, b):
-        """Adds two numbers together
-
-        Args:
-            a (int): The first number
-            b (int): The second number
-
-        Returns:
-            int: The sum of the two numbers
-        """
-
-        return a + b
-
-    def add_one(self, number) -> int:
-        """Adds one to a number
-
-        Args:
-            number (int): The number to add one to
-
-        Returns:
-            int: The number plus one
-        """
-
-        logging.info(f'Adding one to {number}')
-
-        return number + 1
-
-    def add_two(self, number) -> int:
-        """Adds two to a number
-
-        Args:
-            number (int): The number to add two to
-
-        Returns:
-            int: The number plus two
-        """
-
-        logging.info(f'Adding two to {number}')
-
-        return sum(number, 2)
+        return self.string + "\n# but now it's parsed!"
