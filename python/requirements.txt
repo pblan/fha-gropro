@@ -2,3 +2,4 @@ black
 configparser
 pdoc
 setuptools
+pylint

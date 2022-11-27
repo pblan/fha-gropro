@@ -23,7 +23,11 @@
 
         <h2>Contents</h2>
         <ul>
-  <li><a href="#ihk-gropro-template-python">IHK GroPro-Template (Python)</a></li>
+  <li><a href="#ihk-gropro-template-python">IHK GroPro-Template (Python)</a>
+  <ul>
+    <li><a href="#generate-api-docs-and-diagrams">Generate API-Docs and Diagrams</a></li>
+    <li><a href="#development-setup">Development Setup</a></li>
+  </ul></li>
 </ul>
 
 
@@ -49,17 +53,70 @@ project_name    </h1>
 
                         <div class="docstring"><h1 id="ihk-gropro-template-python">IHK GroPro-Template (Python)</h1>
 
-<p>Generate docs:</p>
+<h2 id="generate-api-docs-and-diagrams">Generate API-Docs and Diagrams</h2>
+
+<h3 id="api-docs">API-Docs</h3>
+
+<p>Prerequisites:</p>
+
+<ul>
+<li><code>pdoc</code> (<a href="https://pdoc.dev/">https://pdoc.dev/</a>)</li>
+</ul>
 
 <pre><code>    pdoc project_name -o docs --docformat 'google' 
 </code></pre>
 
-<p>Install local python package in edit-mode:</p>
+<h3 id="diagrams">Diagrams</h3>
 
-<p>Using <code>pip</code> (uses <code>setup.py</code>):</p>
+<p>Prerequisites:</p>
 
-<pre><code>    pip install -e .
+<ul>
+<li><code>pyreverse</code> (<a href="https://www.logilab.org/blogentry/6882">https://www.logilab.org/blogentry/6882</a>) (part of <code>pylint</code>)</li>
+<li><code>graphviz</code> (<a href="https://graphviz.org/">https://graphviz.org/</a>) (proper package and not using the python package found using <code>pip</code>!)</li>
+</ul>
+
+<pre><code>    pyreverse -o pdf uml
 </code></pre>
+
+<p><!-- include pdfs -->
+ <iframe width="100%" src="../uml/classes.pdf">
+ <iframe width="100%" src="../uml/packages.pdf"></p>
+
+<h2 id="development-setup">Development Setup</h2>
+
+<p>Prerequisites:</p>
+
+<ul>
+<li><code>conda</code> (<a href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a>)</li>
+</ul>
+
+<ol>
+<li><p>Create a <code>conda</code> environment from the <code>environment.yml</code> file:</p>
+
+<pre><code>    conda env create -f environment.yml
+</code></pre>
+
+<p><code>environment.yml</code> (installs dependencies using <code>pip</code>):</p>
+
+<pre><code>    name: project_name
+    dependencies:
+    - python&gt;=3.10
+    - pip
+    - pip:
+        - -r requirements.txt
+</code></pre></li>
+<li><p>Activate the environment:</p>
+
+<pre><code>    conda activate project_name
+</code></pre></li>
+<li><p>Install local <code>python</code> package in edit-mode</p>
+
+<ul>
+<li>Using <code>pip</code> (uses <code>setup.py</code>):
+<pre><code>    pip install -e .
+</code></pre></li>
+</ul></li>
+</ol>
 </div>
 
                         <input id="mod-project_name-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">

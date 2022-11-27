@@ -1,13 +1,24 @@
 
 # IHK GroPro-Template (Python)
 
-## Generate API-Docs
+## Generate API-Docs and Diagrams
+### API-Docs
 Prerequisites:
 - `pdoc` (https://pdoc.dev/)
 
 ```
     pdoc project_name -o docs --docformat 'google' 
 ```
+
+### Diagrams
+Prerequisites:
+- `pyreverse` (https://www.logilab.org/blogentry/6882) (part of `pylint`)
+- `graphviz` (https://graphviz.org/) (proper package and not using the python package found using `pip`)
+
+```
+    pyreverse -o pdf project_name && mv *.pdf uml
+```
+
 
 ## Development Setup
 
