@@ -1,0 +1,42 @@
+\documentclass{gropro}
+
+\usepackage[backend=biber]{biblatex}
+%\addbibresource{paper.bib}
+
+\author{Patrick Gustav Blaneck}
+\azubiid{20000}
+\title{Thema Pending}
+\date{\today}
+\programmingLanguage{Python}
+\affiliation{IT Center RWTH Aachen University}
+
+\begin{document}
+\maketitle
+
+% Inhaltsverzeichnis
+\tableofcontents
+\newpage
+
+% Inhalt 
+\input{includes/01_aufgabenanalyse.tex}
+\input{includes/02_verfahrensbeschreibung.tex}
+\input{includes/03_programmbeschreibung.tex}
+\input{includes/04_testing_und_laufzeitanalyse.tex}
+\input{includes/05_abweichungen.tex}
+\input{includes/06_zusammenfassung_und_ausblick.tex}
+
+% Anhang
+\appendix
+\chapter*{Anhang}
+\addcontentsline{toc}{section}{Anhang}
+\renewcommand{\thesection}{\Alph{section}}
+
+\input{includes/07_benutzeranleitung.tex}
+\input{includes/08_entwicklerdokumentation.tex}
+\input{includes/09_hilfsmittel.tex}
+%\input{includes/10_quellcode.tex}
+
+% Literatur
+\printbibliography
+
+\end{document}

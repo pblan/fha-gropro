@@ -1,0 +1,4 @@
+black
+configparser
+pdoc
+setuptools

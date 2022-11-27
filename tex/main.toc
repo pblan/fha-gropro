@@ -1,0 +1,39 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Aufgabenanalyse}{4}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Eingabe}{4}{subsection.0.1.1}%
+\contentsline {subsubsection}{Format}{4}{section*.2}%
+\contentsline {subsubsection}{Fehlerquellen und -behebung}{4}{section*.4}%
+\contentsline {subsection}{\numberline {1.2}Ausgabe}{4}{subsection.0.1.2}%
+\contentsline {subsubsection}{Format}{4}{section*.5}%
+\contentsline {subsubsection}{Fehlerquellen und -behebung}{5}{section*.7}%
+\contentsline {section}{\numberline {2}Verfahrensbeschreibung}{6}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Datenstrukturen}{6}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Algorithmen}{6}{subsection.0.2.2}%
+\contentsline {subsubsection}{Verarbeitung der Eingabedatei}{6}{section*.8}%
+\contentsline {subsubsection}{Erstellung der Ausgabedatei}{6}{section*.9}%
+\contentsline {section}{\numberline {3}Programmbeschreibung}{6}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Klassen und Schnittstellen}{6}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Algorithmen}{7}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Aufrufhierarchie}{7}{subsection.0.3.3}%
+\contentsline {section}{\numberline {4}Testing und Laufzeitanalyse}{8}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Testing}{8}{subsection.0.4.1}%
+\contentsline {subsubsection}{Teststrategie}{8}{section*.12}%
+\contentsline {subsubsection}{Beobachtungen}{8}{section*.14}%
+\contentsline {subsection}{\numberline {4.2}Laufzeitanalyse}{9}{subsection.0.4.2}%
+\contentsline {section}{\numberline {5}Abweichungen}{10}{section.0.5}%
+\contentsline {section}{\numberline {6}Zusammenfassung und Ausblick}{10}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Zusammenfassung}{10}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}Ausblick}{10}{subsection.0.6.2}%
+\contentsline {section}{Anhang}{11}{appendix*.17}%
+\contentsline {section}{\numberline {A}Benutzeranleitung}{11}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {A.1}Installation}{11}{subsection.Alph0.1.1}%
+\contentsline {subsubsection}{Voraussetzungen}{11}{section*.18}%
+\contentsline {subsubsection}{Vorgehen}{11}{section*.19}%
+\contentsline {subsection}{\numberline {A.2}Benutzung}{11}{subsection.Alph0.1.2}%
+\contentsline {subsubsection}{Eingabe}{11}{section*.20}%
+\contentsline {subsubsection}{Ausgabe}{11}{section*.21}%
+\contentsline {subsubsection}{Kommandozeilenparameter}{11}{section*.22}%
+\contentsline {subsubsection}{Beispiele}{11}{section*.23}%
+\contentsline {subsubsection}{Fehlermeldungen}{11}{section*.24}%
+\contentsline {section}{\numberline {B}Entwicklerdokumentation}{11}{section.Alph0.2}%
+\contentsline {section}{\numberline {C}Hilfsmittel}{12}{section.Alph0.3}%

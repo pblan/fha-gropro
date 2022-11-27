@@ -1,0 +1,8 @@
+# conda env create -f environment.yml && conda activate project_name
+# conda env update -f environment.yml --prune
+name: project_name
+dependencies:
+  - python>=3.10
+  - pip
+  - pip:
+    - -r requirements.txt

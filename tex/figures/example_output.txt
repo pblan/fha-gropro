@@ -1,0 +1,32 @@
+Startmatrix:
+0 10 15 20
+5 0 9 10
+6 13 0 12
+8 8 9 0
+mit Bewertung: max( 29, 32) = 32
+*********************
+naechster Ort: B
+0 10 0 0
+0 0 9 10
+6 0 0 12
+8 0 9 0
+mit Bewertung: max( 33, 35) = 35
+*********************
+[...]
+*********************
+naechster Ort: D
+0 10 0 0
+0 0 0 10
+6 0 0 0
+0 0 9 0
+mit Bewertung: max( 35, 35) = 35
+*********************
+also von B nach D
+*********************
+Rundreise:
+von A
+ueber B
+ueber D
+ueber C
+nach A
+Entfernung: 35
