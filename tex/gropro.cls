@@ -291,18 +291,7 @@
 \end{center}
 \vspace*{4ex}
 
-Hiermit versichere ich, dass das vorliegende Prüfprodukt zum Thema 
-
-\vspace*{2ex}
-
-\begin{center}
-  {\large\@title\par}
-\end{center}
-
-\vspace*{2ex}
-
-
-von mir selbstständig erstellt wurde.
+Ich erkläre verbindlich, dass das vorliegende Prüfprodukt von mir selbstständig erstellt wurde.
 Die als Arbeitshilfe genutzten Unterlagen sind in der Arbeit vollständig aufgeführt. 
 Ich versichere, dass der vorgelegte Ausdruck mit dem Inhalt der von mir erstellten digitalen Version identisch ist.
 Weder ganz noch in Teilen wurde die Arbeit bereits als Prüfungsleitung vorgelegt. 

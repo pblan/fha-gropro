@@ -3,3 +3,5 @@ configparser
 pdoc
 setuptools
 pylint
+numpy
+matplotlib

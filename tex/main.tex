@@ -3,11 +3,18 @@
 \usepackage[backend=biber]{biblatex}
 %\addbibresource{paper.bib}
 
+\usepackage{fontawesome5}
+\usepackage{subcaption}
+
+\DeclareMathOperator{\ACC}{ACC} % Acceleration
+\DeclareMathOperator{\CON}{CON} % Constant velocity
+\DeclareMathOperator{\DEC}{DEC} % Deceleration
+
 \author{Patrick Gustav Blaneck}
 \azubiid{20000}
-\title{Thema Pending}
+\title{Entwicklung einer Software zur Simulation einer \enquote{Spidercam}}
 \date{\today}
-\programmingLanguage{Python}
+\programmingLanguage{\faPython \ Python}
 \affiliation{IT Center RWTH Aachen University}
 
 \begin{document}
@@ -31,10 +38,11 @@
 \addcontentsline{toc}{section}{Anhang}
 \renewcommand{\thesection}{\Alph{section}}
 
-\input{includes/07_benutzeranleitung.tex}
-\input{includes/08_entwicklerdokumentation.tex}
-\input{includes/09_hilfsmittel.tex}
-%\input{includes/10_quellcode.tex}
+\input{includes/07_grafiken.tex}
+\input{includes/08_benutzeranleitung.tex}
+\input{includes/09_entwicklerdokumentation.tex}
+\input{includes/10_hilfsmittel.tex}
+\input{includes/11_quellcode.tex}
 
 % Literatur
 \printbibliography

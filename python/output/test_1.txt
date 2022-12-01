@@ -1,2 +1,0 @@
-example input file 1
-# but now it's parsed!

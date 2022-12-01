@@ -7,7 +7,7 @@ Prerequisites:
 - `pdoc` (https://pdoc.dev/)
 
 ```
-    pdoc project_name -o docs --docformat 'google' 
+    pdoc spidercam_simulator -o docs --docformat 'google' 
 ```
 
 ### Diagrams
@@ -16,7 +16,7 @@ Prerequisites:
 - `graphviz` (https://graphviz.org/) (proper package and not using the python package found using `pip`)
 
 ```
-    pyreverse -o pdf project_name && mv *.pdf uml
+    pyreverse -o pdf spidercam_simulator && mv *.pdf uml
 ```
 
 
@@ -32,7 +32,7 @@ Prerequisites:
 
     `environment.yml` (installs dependencies using `pip`):
     ```
-        name: project_name
+        name: spidercam_simulator
         dependencies:
         - python>=3.10
         - pip
@@ -42,7 +42,7 @@ Prerequisites:
 
 2. Activate the environment:
     ```
-        conda activate project_name
+        conda activate spidercam_simulator
     ```
 
 3. Install local `python` package in edit-mode

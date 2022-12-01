@@ -1,6 +1,6 @@
-# conda env create -f environment.yml && conda activate project_name
+# conda env create -f environment.yml && conda activate spidercam_simulator
 # conda env update -f environment.yml --prune
-name: project_name
+name: spidercam_simulator
 dependencies:
   - python>=3.10
   - pip

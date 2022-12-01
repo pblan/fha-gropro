@@ -1,0 +1,7 @@
+# Beispiel
+dim 70 100 30
+start 10 80 10
+vmax 6
+amax 2
+freq 2
+0 50 40 30		

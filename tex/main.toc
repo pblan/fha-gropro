@@ -1,39 +1,43 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Aufgabenanalyse}{4}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Eingabe}{4}{subsection.0.1.1}%
-\contentsline {subsubsection}{Format}{4}{section*.2}%
-\contentsline {subsubsection}{Fehlerquellen und -behebung}{4}{section*.4}%
-\contentsline {subsection}{\numberline {1.2}Ausgabe}{4}{subsection.0.1.2}%
-\contentsline {subsubsection}{Format}{4}{section*.5}%
-\contentsline {subsubsection}{Fehlerquellen und -behebung}{5}{section*.7}%
-\contentsline {section}{\numberline {2}Verfahrensbeschreibung}{6}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Datenstrukturen}{6}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Algorithmen}{6}{subsection.0.2.2}%
-\contentsline {subsubsection}{Verarbeitung der Eingabedatei}{6}{section*.8}%
-\contentsline {subsubsection}{Erstellung der Ausgabedatei}{6}{section*.9}%
-\contentsline {section}{\numberline {3}Programmbeschreibung}{6}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Klassen und Schnittstellen}{6}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}Algorithmen}{7}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}Aufrufhierarchie}{7}{subsection.0.3.3}%
-\contentsline {section}{\numberline {4}Testing und Laufzeitanalyse}{8}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}Testing}{8}{subsection.0.4.1}%
-\contentsline {subsubsection}{Teststrategie}{8}{section*.12}%
-\contentsline {subsubsection}{Beobachtungen}{8}{section*.14}%
-\contentsline {subsection}{\numberline {4.2}Laufzeitanalyse}{9}{subsection.0.4.2}%
-\contentsline {section}{\numberline {5}Abweichungen}{10}{section.0.5}%
-\contentsline {section}{\numberline {6}Zusammenfassung und Ausblick}{10}{section.0.6}%
-\contentsline {subsection}{\numberline {6.1}Zusammenfassung}{10}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {6.2}Ausblick}{10}{subsection.0.6.2}%
-\contentsline {section}{Anhang}{11}{appendix*.17}%
-\contentsline {section}{\numberline {A}Benutzeranleitung}{11}{section.Alph0.1}%
-\contentsline {subsection}{\numberline {A.1}Installation}{11}{subsection.Alph0.1.1}%
-\contentsline {subsubsection}{Voraussetzungen}{11}{section*.18}%
-\contentsline {subsubsection}{Vorgehen}{11}{section*.19}%
-\contentsline {subsection}{\numberline {A.2}Benutzung}{11}{subsection.Alph0.1.2}%
-\contentsline {subsubsection}{Eingabe}{11}{section*.20}%
-\contentsline {subsubsection}{Ausgabe}{11}{section*.21}%
-\contentsline {subsubsection}{Kommandozeilenparameter}{11}{section*.22}%
-\contentsline {subsubsection}{Beispiele}{11}{section*.23}%
-\contentsline {subsubsection}{Fehlermeldungen}{11}{section*.24}%
-\contentsline {section}{\numberline {B}Entwicklerdokumentation}{11}{section.Alph0.2}%
-\contentsline {section}{\numberline {C}Hilfsmittel}{12}{section.Alph0.3}%
+\contentsline {subsection}{\numberline {1.1}Eingabe}{5}{subsection.0.1.1}%
+\contentsline {subsubsection}{Format}{5}{section*.3}%
+\contentsline {subsubsection}{Fehlerquellen und -behebung}{5}{section*.5}%
+\contentsline {subsection}{\numberline {1.2}Ausgabe}{6}{subsection.0.1.2}%
+\contentsline {subsubsection}{Format}{6}{section*.6}%
+\contentsline {subsection}{\numberline {1.3}Mathematische Modellierung}{6}{subsection.0.1.3}%
+\contentsline {subsubsection}{Berechnung der Seillängen}{6}{section*.9}%
+\contentsline {subsubsection}{Bewegung der Spidercam}{7}{section*.10}%
+\contentsline {subsubsection}{Abbrechen der Bewegung}{9}{section*.13}%
+\contentsline {section}{\numberline {2}Verfahrensbeschreibung}{10}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Datenstrukturen}{10}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Algorithmen}{10}{subsection.0.2.2}%
+\contentsline {subsubsection}{Verarbeitung der Eingabedatei}{11}{section*.15}%
+\contentsline {subsubsection}{Erstellung der Ausgabedatei}{11}{section*.16}%
+\contentsline {section}{\numberline {3}Programmbeschreibung}{11}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Klassen und Schnittstellen}{11}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Algorithmen}{11}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Aufrufhierarchie}{11}{subsection.0.3.3}%
+\contentsline {section}{\numberline {4}Testing}{12}{section.0.4}%
+\contentsline {subsubsection}{Strategie}{12}{section*.18}%
+\contentsline {subsubsection}{Beobachtungen}{12}{section*.20}%
+\contentsline {subsection}{\numberline {4.1}Laufzeitanalyse}{13}{subsection.0.4.1}%
+\contentsline {section}{\numberline {5}Abweichungen}{13}{section.0.5}%
+\contentsline {section}{\numberline {6}Zusammenfassung und Ausblick}{14}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Zusammenfassung}{14}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}Ausblick}{14}{subsection.0.6.2}%
+\contentsline {section}{Anhang}{16}{appendix*.23}%
+\contentsline {section}{\numberline {A}Grafiken}{16}{section.Alph0.1}%
+\contentsline {section}{\numberline {B}Benutzeranleitung}{17}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {B.1}Installation}{17}{subsection.Alph0.2.1}%
+\contentsline {subsubsection}{Voraussetzungen}{17}{section*.25}%
+\contentsline {subsubsection}{Vorgehen}{17}{section*.26}%
+\contentsline {subsection}{\numberline {B.2}Benutzung}{17}{subsection.Alph0.2.2}%
+\contentsline {subsubsection}{Eingabe}{17}{section*.27}%
+\contentsline {subsubsection}{Ausgabe}{17}{section*.28}%
+\contentsline {subsubsection}{Kommandozeilenparameter}{17}{section*.29}%
+\contentsline {subsubsection}{Beispiele}{17}{section*.30}%
+\contentsline {subsubsection}{Fehlermeldungen}{17}{section*.31}%
+\contentsline {section}{\numberline {C}Entwicklerdokumentation}{17}{section.Alph0.3}%
+\contentsline {section}{\numberline {D}Hilfsmittel}{17}{section.Alph0.4}%
+\contentsline {section}{\numberline {E}Quellcode}{18}{section.Alph0.5}%

@@ -1,4 +1,11 @@
-0 10 15 20
-5 0 9 10
-6 13 0 12
-8 8 9 0
+# Beispiel
+dim 70 100 30
+start 10 80 10
+vmax 6
+amax 2
+freq 2
+0 50 40 30 # Instruktion 1
+20 10 80 10 # Instruktion 2
+22 50 40 30	# Instruktion 3
+23 35 50 30	# Instruktion 4
+27.5 10 80 20 # Instruktion 5

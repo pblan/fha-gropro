@@ -1,6 +1,6 @@
 import unittest
 
-from project_name import Calculator
+from spidercam_simulator import Calculator
 
 # to run the tests, run the following command:
 # python -m unittest tests\test_basic.py
@@ -16,5 +16,5 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.add_two(1), 3)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,14 @@
+# Example which travels to each edge in the graph once after 10 seconds
+dim 100 200 300
+start 0 0 0
+vmax 50
+amax 10
+freq 10
+# t x y z
+0 0 0 0
+10 100 0 0
+20 100 200 0
+30 100 200 300
+40 0 200 300
+50 0 0 300
+60 0 0 0

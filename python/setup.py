@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="project_name",
+    name="spidercam_simulator",
     packages=find_packages(),
     description="IHK Große Prog, Winter 2022",
     long_description="""IHK Große Prog, Winter 2022

@@ -2,20 +2,22 @@
 \label{sec:verfahrensbeschreibung}
 
 % Allgemeine Verfahrensbeschreibung
+Für den zu simulierenden Sachverhalt lohnt es sich, jede Bewegung der Kamera in Phasen zu unterteilen, um unübersichtliche Strukturen zu vermeiden.
+So bietet es sich an, eine \emph{Phase} (\texttt{Phase}) als entweder eine \emph{Beschleunigungs-} (\texttt{ACCELERATION}), \emph{Konstantgeschwindigkeits-} (\texttt{CONSTANT\_VELOCITY}) oder eine \emph{Bremsphase} (\texttt{DECELERATION}) zu definieren.
+
+Eine \emph{Bewegung} (\texttt{Movement}) besteht dann aus entweder einer Beschleunigungs-, einer Konstantgeschwindigkeits- und einer Bremsphase oder nur aus einer Beschleunigungs- und einer Bremsphase.
+
+Eine Instanz der Spidercam (\texttt{Spidercam}) enthält dann zusätzlich zu bekannten Konstanten eine Liste von Bewegungen (\texttt{movements}) und eine einelementige Warteschlange (\texttt{queue}).
 
 \subsection{Datenstrukturen}
 \label{ssec:datenstrukturen}
 
 % Beschreibung der Datenstrukturen
-Aus der Aufgabenanalyse ergibt sich, dass folgende Datenstrukturen benötigt werden:
+Es werden folgende Datenstrukturen verwendet:
 
 \begin{itemize}
-    \item $\ldots$
-    \item $\ldots$
-    \item $\ldots$
+    \item
 \end{itemize}
-
-Besonders nennenswert ist dabei $\ldots$.
 
 \subsection{Algorithmen}
 \label{ssec:algorithmen}
