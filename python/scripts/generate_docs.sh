@@ -1,0 +1,1 @@
+pdoc spidercam_simulator -o docs --docformat 'google' --math

@@ -1,7 +1,9 @@
 from __future__ import annotations
 import logging
+import os
 import matplotlib.pyplot as plt
 import numpy as np
+import imageio
 
 
 class Plotter:
@@ -100,10 +102,84 @@ class Plotter:
             plt.show()
         else:
             # Save at output + name + cam_pos.png
+            # only get base name of file
             plt.savefig(
-                f"{self.output_dir}/{self.name}_cam_pos.png",
+                f"{self.output_dir}/{os.path.basename(self.name)}_cam_pos.png",
                 bbox_inches="tight",
                 dpi=300,
+            )
+
+    def animate_cam_positions(self) -> None:
+        # also create gif
+        # https://stackoverflow.com/questions/11874767/creating-a-gif-animation-from-matplotlib
+
+        self.logger.info("Plotting camera positions for %s", self.name)
+
+        # If output directory is not specified, plot to screen
+        if self.output_dir is None:
+            plt.ion()
+
+        # Plot camera positions projection = 3d
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection="3d")
+
+        # Set axis labels
+        ax.set_xlabel("X")
+        ax.set_ylabel("Y")
+        ax.set_zlabel("Z")
+
+        # Set axis limits
+        ax.set_xlim3d(0, self.dim[0])
+        ax.set_ylim3d(0, self.dim[1])
+        ax.set_zlim3d(0, self.dim[2])
+
+        # Rotate so that origin is in the bottom left and z is up, angle is normal
+        # ax.view_init(azim=0, elev=90)
+
+        # Plot camera positions
+        xline = self.cam_positions[:, 0]
+        yline = self.cam_positions[:, 1]
+        zline = self.cam_positions[:, 2]
+
+        # Define color as distance from one point to the previous
+        color = np.zeros(len(xline))
+        for i in range(1, len(xline)):
+            color[i] = np.linalg.norm(
+                np.array([xline[i], yline[i], zline[i]])
+                - np.array([xline[i - 1], yline[i - 1], zline[i - 1]])
+            )
+
+        # Plot start as big green x
+        ax.scatter(xline[0], yline[0], zline[0], c="green", s=200, marker="x")
+
+        # Plot camera positions with pause
+        for i in range(len(xline)):
+            ax.scatter(xline[i], yline[i], zline[i], c=color[i], cmap="coolwarm")
+
+            # save frame
+            plt.savefig(
+                f"{self.output_dir}/{os.path.basename(self.name)}_cam_pos_{i}.png",
+                bbox_inches="tight",
+                dpi=300,
+            )
+
+        # Set title for whole figure
+        # fig.suptitle("Camera Positions for " + self.name)
+
+        # Save or show plot as gif
+        with imageio.get_writer(
+            f"{self.output_dir}/{os.path.basename(self.name)}_cam_pos.gif", mode="I"
+        ) as writer:
+            for i in range(len(xline)):
+                image = imageio.imread(
+                    f"{self.output_dir}/{os.path.basename(self.name)}_cam_pos_{i}.png"
+                )
+                writer.append_data(image)
+
+        # remove pngs
+        for i in range(len(xline)):
+            os.remove(
+                f"{self.output_dir}/{os.path.basename(self.name)}_cam_pos_{i}.png"
             )
 
     def plot_rope_lengths(self) -> None:
@@ -148,7 +224,7 @@ class Plotter:
         else:
             # Save at output + name + rope_lengths.png
             plt.savefig(
-                f"{self.output_dir}/{self.name}_rope_lengths.png",
+                f"{self.output_dir}/{os.path.basename(self.name)}_rope_lengths.png",
                 bbox_inches="tight",
                 dpi=300,
             )
@@ -164,3 +240,4 @@ class Plotter:
 
         self.plot_cam_positions()
         self.plot_rope_lengths()
+        self.animate_cam_positions()

@@ -1,0 +1,64 @@
+@startuml 
+
+Controller -> Spidercam 
+' activate Controller
+' activate Spidercam
+' activate Controller
+' activate Spidercam
+' activate Movement 
+' activate Phase 
+
+
+loop len(instructions) > 0 || spidercam.isMoving() || spidercam.queue is not None 
+  alt len(instructions) > 0 
+    alt current_time > instructions[0].start_time 
+      Controller -> Spidercam : move(instructions[0])
+
+      alt time given
+        alt not currently moving 
+          Spidercam -> Spidercam : movements.append(queue)
+          Spidercam -> Spidercam : queue = None
+        end 
+
+      else instruction given 
+        alt not yet moved 
+          Spidercam -> Spidercam : movements.append(instruction)
+        end
+
+        alt last movement not finished
+          Spidercam -> Movement : start_deceleration(instruction.start_time)
+          ' activate Movement
+
+          ' activate Phase 
+            Movement -> Phase 
+            Phase -> Phase : destination = get_position(offset)
+            Phase -> Phase : update()
+          ' deactivate Phase      
+          
+             
+
+          ' activate Phase 
+            Movement -> Phase
+            Phase -> Phase : destination = get_position(offset)
+            Phase -> Phase : update()
+          ' deactivate Phase      
+
+          ' deactivate Movement
+
+          Spidercam -> Spidercam : queue = instruction
+        else 
+          Spidercam -> Spidercam : movements.append(instruction)
+        end
+      end 
+    end
+  end 
+    Controller -> Spidercam : get_position(current_time)
+    Spidercam -> Spidercam : move(time)
+    Spidercam --> Controller : position
+    Controller -> Controller : get_rope_lengths(position)
+end
+
+' deactivate Spidercam
+' deactivate Controller
+
+@enduml

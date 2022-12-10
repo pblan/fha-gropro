@@ -1,0 +1,81 @@
+st3=>start: start move
+io5=>inputoutput: input: self, instruction, time
+op8=>operation: '🕹️ Moves the spidercam to a given position or updates the current movement at a given time\n\n        Args:\n            Instruction (Instruction): The instruction to move the spidercam. Defaults to None.\n            time (float): The time to update the current movement at. Defaults to -1.0.\n\n        Returns:\n            None\n        '
+cond11(align-next=no)=>condition: if ((instruction is None) and (time == (- 1.0)))
+sub15=>subroutine: self.logger.debug('No instruction or time given, returning')
+e18=>end: end function return
+cond25=>condition: if ((instruction is None) and (time != (- 1.0)))
+sub29=>subroutine: self.logger.debug('Updating movement at time %s', time)
+cond32(align-next=no)=>condition: if (self.queue is None)
+sub36=>subroutine: self.logger.debug('No movement in queue, returning')
+e39=>end: end function return
+cond46=>condition: if (self.movements[(- 1)].end_time() <= time)
+sub50=>subroutine: self.logger.debug('Last movement is finished, adding queue to movements list')
+sub52=>subroutine: self.movements.append(self.queue)
+op54=>operation: self.queue = None
+e57=>end: end function return
+e64=>end: end function return
+sub70=>subroutine: self.logger.debug('Moving spidercam with instruction %s', instruction)
+cond73=>condition: if (len(self.movements) == 0)
+sub77=>subroutine: self.logger.debug('First movement registered')
+sub79=>subroutine: self.movements.append(spidercam_simulator.Movement(self, instruction.start_time, self.start, instruction.destination))
+e82=>end: end function return
+sub88=>subroutine: self.logger.debug('Checking if last movement is finished')
+sub90=>subroutine: self.logger.debug('Last movement: %s', self.movements[(- 1)])
+cond93(align-next=no)=>condition: if (self.movements[(- 1)].end_time() > instruction.start_time)
+sub97=>subroutine: self.logger.debug('Last movement is not yet finished')
+sub99=>subroutine: self.logger.debug('Queueing instruction %s', instruction)
+sub101=>subroutine: self.movements[(- 1)].start_deceleration(instruction.start_time)
+op103=>operation: self.queue = spidercam_simulator.Movement(self, self.movements[(- 1)].end_time(), self.movements[(- 1)].destination(), instruction.destination)
+e106=>end: end function return
+cond113=>condition: if (self.queue is not None)
+sub117=>subroutine: self.logger.debug('Last movement is finished and there is a queue')
+sub119=>subroutine: self.logger.debug('Executing queue')
+sub121=>subroutine: self.movements.append(self.queue)
+op123=>operation: self.queue = None
+sub125=>subroutine: self.move(instruction)
+e128=>end: end function return
+sub134=>subroutine: self.logger.debug('Last movement is finished and there is no queue')
+sub136=>subroutine: self.movements.append(spidercam_simulator.Movement(self, max(self.movements[(- 1)].end_time(), instruction.start_time), self.movements[(- 1)].destination(), instruction.destination))
+e138=>end: end move
+
+st3->io5
+io5->op8
+op8->cond11
+cond11(yes, right)->sub15
+sub15->e18
+cond11(no)->cond25
+cond25(yes, right)->sub29
+sub29->cond32
+cond32(yes, right)->sub36
+sub36->e39
+cond32(no)->cond46
+cond46(yes, right)->sub50
+sub50->sub52
+sub52->op54
+op54->e57
+cond46(no)->e64
+cond25(no)->sub70
+sub70->cond73
+cond73(yes, right)->sub77
+sub77->sub79
+sub79->e82
+cond73(no)->sub88
+sub88->sub90
+sub90->cond93
+cond93(yes, right)->sub97
+sub97->sub99
+sub99->sub101
+sub101->op103
+op103->e106
+cond93(no)->cond113
+cond113(yes, right)->sub117
+sub117->sub119
+sub119->sub121
+sub121->op123
+op123->sub125
+sub125->e128
+cond113(no)->sub134
+sub134->sub136
+sub136->e138
+

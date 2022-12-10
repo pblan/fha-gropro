@@ -1,0 +1,11 @@
+# Example to test instruction out of range
+dim 100 100 30
+start 10 80 10
+vmax 6
+amax 2
+freq -1
+0 50 40 30
+20 10 80 40
+22 50 40 30
+23 35 50 30
+27.5 10 80 20

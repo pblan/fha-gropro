@@ -155,6 +155,7 @@
 \usepackage{adjustbox}
 \usepackage{mdframed}
 \usepackage{float}
+\usepackage{nicefrac}
 
 % Show most recent revision number and date in date field
 \makeatletter
@@ -169,7 +170,8 @@
    \lowercase{\endgroup\def\@activeus{\catcode`\_=\active \let~\_}}
 \makeatother
 
-
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 %\subject{\normalfont{}\texttt{\href{https://matse.paddel.xyz/spicker}{https://matse.paddel.xyz/spicker}}}
 

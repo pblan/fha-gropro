@@ -1,0 +1,1 @@
+python spidercam_simulator -d

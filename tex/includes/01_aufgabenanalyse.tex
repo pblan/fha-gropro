@@ -35,7 +35,8 @@ Die besondere Schwierigkeit besteht unter anderem daraus, dass:
     \end{subfigure}
     \caption{Beispiel für die Veränderung der Seillängen bei einer einfachen linearen Bewegung der Spidercam.
         Es ist zu erkennen, dass sich die Seillängen nicht linear verändern.
-        Die Farbe der Bewegungspunkte gibt dabei an, wie schnell sich die Spidercam in diesem Moment bewegt.}
+        Die Farbe der Bewegungspunkte gibt dabei an, wie schnell sich die Spidercam in diesem Moment bewegt.
+        Das grüne X markiert die Startposition der Spidercam.}
     \label{fig:length_change}
 \end{figure}
 
@@ -85,7 +86,7 @@ Die offensichtlichste Fehlerquellen sind:
     \item Startposition außerhalb des Spielfelds
     \item Maximalgeschwindigkeit oder -beschleunigung sind nicht positiv
     \item Diskretisierung ist nicht positiv
-    \item Instruktionen außerhalb des Spielfelds\footnote{Von chronologisch korrekt sortierten Instruktionen kann ausgegangen werden.}
+    \item Instruktionen außerhalb des Spielfelds\footnote{Von chronologisch korrekt sortierten Instruktionen kann ausgegangen werden.} oder nicht vorhanden
 \end{itemize}
 
 % Beschreibung der Fehlerbehebung
@@ -266,7 +267,7 @@ Es gilt ($d(A, B) \leq 2 \cdot d_{\max} $):
 \]
 
 Es ist also direkt ersichtlich, dass eine Phase konstanter Geschwindigkeit entfällt.
-Die höchste Geschwindigkeit in dieser Bewegung $v_x$ wird also aufgrund der gleich langen Beschleunigungs- und Abbremsphases genau zwischen $A$ und $B$ erreicht.
+Die höchste Geschwindigkeit in dieser Bewegung $v_x$ wird also aufgrund der gleich langen Beschleunigungs- und Abbremsphasen genau zwischen $A$ und $B$ erreicht.
 Die Zeit $t_x$ ist der Zeitpunkt, an dem die maximale Geschwindigkeit $v_{x}$ erreicht wird.
 
 Es gilt also:
@@ -285,7 +286,7 @@ Die Berechnungen in dieser Form werden später auch in der Implementierung verwe
 \end{figure}
 
 \subsubsection{Abbrechen der Bewegung}
-Instruktionen zur Bewegung der Spidercam können zu jedem Zeitpunkt stattfinden.
+Instruktionen zur Bewegung der Spidercam können zu jedem Zeitpunkt $t$ stattfinden.
 Befindet sich die Spidercam jedoch bereits in Bewegung während eine neue Instruktion ankommt, so wird die aktuelle Bewegung abgebrochen, indem die Spidercam sofort anfängt zu bremsen\footnote{Wenn bereits gebremst wird, muss nicht neu abgebremst werden.}.
 Die neue Bewegung beginnt dann erst, wenn die Spidercam ihre Geschwindigkeit auf 0 gebracht hat.
 Kommt eine neue Instruktion an, obwohl bereits eine Instruktion auf Ausführung wartet, so wird die alte Instruktion überschrieben, da diese als veraltet angenommen wird.
@@ -295,13 +296,12 @@ Kommt eine neue Instruktion an, obwohl bereits eine Instruktion auf Ausführung 
 Für die weitere Implementierung ist es hier wichtig zu klären, wie sich die Bremsdistanz $d_{\DEC}$, die Bremszeit $t_{\DEC}$ und das neue Ziel $B'$ bestimmen lassen.
 
 Die Bremsdistanz $d_{\DEC}$ ist die Distanz, die die Spidercam zurücklegt, wenn sie von ihrer aktuellen Geschwindigkeit $v$ auf 0 abgebremst wird.
-Die Bremsdistanz ist also gleich der Fläche unter der Geschwindigkeitskurve $v(t)$.
-Die Fläche unter der Kurve $v(t)$ ist die Distanz, die die Spidercam zurücklegt (siehe Abbildung \ref{fig:forced_deceleration}).
+Die Bremsdistanz ist also gleich der Fläche unter der Geschwindigkeitskurve $v(t)$ der aktuellen Bremsphase (siehe Abbildung \ref{fig:forced_deceleration})
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/forced_deceleration.png}
-    \caption{Berechnung der Bremsdistanz $d_{\DEC}$}
+    \caption{Berechnung der Bremsdistanz $d_{\DEC}$. Die rote Fläche unter der Geschwindigkeitskurve ist die Bremsdistanz.}
     \label{fig:forced_deceleration}
 \end{figure}
 

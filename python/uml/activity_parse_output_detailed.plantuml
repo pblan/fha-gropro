@@ -1,0 +1,52 @@
+@startuml parse_output(dim, freq, cam_positions, rope_lengths)
+start
+
+:transpose cam_positions;
+:transpose rope_lengths;
+
+:time_stamps = range(0, length(cam_positions), intervall=freq);
+
+split 
+:output1 = "";
+:i = 0;
+repeat 
+:j = 0;
+repeat
+:output1 += rope_lengths[i][j] + ",";
+:j += 1;
+repeat while (j < length(rope_lengths[i]) - 1?) is (yes)
+->no;
+:output1 += rope_lengths[i][j] + "\\n";
+: i += 1;
+repeat while (i <= length(rope_lengths) - 1?) is (yes)
+->no;
+
+split again 
+:output2 = "";
+:output2 += dim[0] + "," + dim[1] + "," + dim[2] + "\\n";
+
+:k = 0;
+repeat
+:output2 += time_stamps[i] + ",";
+:k += 1;
+repeat while (k < length(time_stamps) - 1?) is (yes)
+->no;
+:output2 += time_stamps[k] + "\\n";
+
+:k = 0;
+repeat
+:l = 0;
+repeat
+:output2 += cam_positions[k][l] + ",";
+:l += 1;
+repeat while (l < length(cam_positions[k]) - 1?) is (yes)
+->no;
+:output2 += cam_positions[k][l] + "\\n";
+:k += 1;
+repeat while (k < length(cam_positions) - 1?) is (yes)
+->no;
+end split 
+
+:return output1, output2;
+stop 
+@enduml

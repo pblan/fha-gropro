@@ -1,0 +1,11 @@
+# Beispiel
+dim 70 100 30
+start 10 80 10
+vmax 6
+amax 2
+freq 2
+0 50 40 30		# 1:
+20 10 80 10		# 2: Anweisung beginnt nach Ende der vorherigen
+22 50 40 30		# 3: Die Bremsung der vorherigen Anweisung wird eingeleitet
+23 35 50 30		# 4: Bremsung von Anweisung 2 noch nicht beendet -> Anweisung 3 wird ignoriert
+27.5 10 80 20	# 5: Anweisung 5 endete nicht zu den diskreten Zeitpunkten -> offset beachten

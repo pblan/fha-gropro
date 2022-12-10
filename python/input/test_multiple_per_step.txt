@@ -1,0 +1,12 @@
+# Example which has multiple instructions within a discrete timespan
+dim 100 100 100
+start 50 50 50
+vmax 50
+amax 10
+freq 10
+0 0 0 0 
+2.05 100 100 100 # opposite direction
+2.1 0 0 0 # should continue in the previous direction
+10 0 100 0
+12.05 0 100 100 # slight change in direction
+12.1 0 0 100 # should continue with this direction

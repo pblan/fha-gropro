@@ -1,0 +1,10 @@
+\section{Testdateien}
+\label{sec:testdateien}
+
+% include all .txt files in the ../python/input folder recursively
+% as figure with caption and label
+
+\foreach \file in {IHK\_1, IHK\_2, test\_spiral, test\_single, test\_diagonals, test\_edges, test\_multiple\_per\_step, test\_multiple\_simultaneously, test\_same\_dest, test\_invalid\_dim, test\_invalid\_vmax, test\_invalid\_amax, test\_invalid\_freq, test\_invalid\_instruction, test\_invalid\_no\_instruction}
+    {
+        \lstinputlisting[inputencoding=utf8, caption={Testdatei \texttt{\file.txt}}]{../python/input/\file.txt}
+    }

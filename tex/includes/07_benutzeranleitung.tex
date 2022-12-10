@@ -1,0 +1,150 @@
+\section{Benutzeranleitung}
+\label{sec:benutzeranleitung}
+
+\subsection{Installation}
+\label{ssec:installation}
+
+\subsubsection{Installation mit conda}
+\label{sssec:installation_mit_conda}
+
+Zur Installation mit \texttt{conda} wird eine verwendbare \texttt{conda}-Instanz benötigt.
+
+Empfohlen wird Miniconda: \url{https://docs.conda.io/en/latest/miniconda.html}.
+
+Die Installation funktioniert dann wie folgt:
+\begin{enumerate}
+    \item Navigation in das Projektverzeichnis \texttt{/python/}.
+    \item Erstellen der \texttt{conda}-Umgebung mithilfe der dort hinterlegten \texttt{environment.yml}:
+          \begin{center}
+              \texttt{conda env create -f environment.yml}
+          \end{center}
+    \item Aktivieren der \texttt{conda}-Umgebung:
+          \begin{center}
+              \texttt{conda activate spidercam\_simulator}
+          \end{center}
+    \item Installieren der \texttt{spidercam\_simulator}-Bibliothek:
+          \begin{center}
+              \texttt{pip install -e .}
+          \end{center}
+\end{enumerate}
+
+% Das Modul kann dann wie folgt ausgeführt werden:
+% \begin{center}
+%     \texttt{python -m spidercam\_simulator}
+% \end{center}
+
+\subsubsection{Installation mit pip}
+\label{sssec:installation_mit_pip}
+
+Zur Installation mit \texttt{pip} wird eine verwendbare \texttt{python}-Instanz benötigt.
+
+Empfohlen wird Python 3.10: \url{https://www.python.org/downloads/}.
+
+Die Installation funktioniert dann wie folgt:
+\begin{enumerate}
+    \item Navigation in das Projektverzeichnis \texttt{/python/}.
+    \item Installieren der benötigten Bibliotheken:
+          \begin{center}
+              \texttt{pip install -r requirements.txt}
+          \end{center}
+    \item Installieren der \texttt{spidercam\_simulator}-Bibliothek:
+          \begin{center}
+              \texttt{pip install -e .}
+          \end{center}
+\end{enumerate}
+
+% Das Modul kann dann wie folgt ausgeführt werden:
+% \begin{center}
+%     \texttt{python -m spidercam\_simulator}
+% \end{center}
+
+\newpage
+\subsection{Benutzung}
+\label{ssec:benutzung}
+
+Das Modul kann nach der Installation wie folgt ausgeführt werden:
+\begin{center}
+    \texttt{python -m spidercam\_simulator}
+\end{center}
+
+Dabei wird das Modul mit den Standardwerten ausgeführt, die in der Datei \texttt{config.ini} hinterlegt sind.
+Es wird empfohlen, diese Datei nicht abzuändern.
+
+Es werden standardmäßig alle Dateien aus dem Verzeichnis \texttt{python/input/} verarbeitet.
+Die Ausgabe erfolgt in das Verzeichnis \texttt{python/output/}.
+Erstellt werden:
+\begin{itemize}
+    \item Eine \texttt{.csv}-Datei entsprechend der Ausgabedatei 1, siehe \ref{ssec:ausgabe}.
+          Sie endet auf \texttt{\_1.csv}.
+    \item Eine \texttt{.csv}-Datei entsprechend der Ausgabedatei 2, siehe \ref{ssec:ausgabe}.
+          Sie endet auf \texttt{\_2.csv}.
+    \item Ein 3D-Plot der Bewegung der Spidercam.
+          Die Datei endet auf \texttt{\_cam\_pos.png}.
+    \item Ein 2D-Plot der Längen der Drahtseile.
+          Die Datei endet auf \texttt{\_rope\_lengths.png}.
+\end{itemize}
+
+Folgende Argumente können an das Modul übergeben werden:
+\begin{itemize}
+    \item \texttt{--input, -i}: Pfad zu einer Eingabedatei oder einem Verzeichnis.
+    \item \texttt{--output, -o}: Pfad zu einem Ausgabeverzeichnis.
+    \item \texttt{--debug, -d}: Aktiviert den Debug-Modus.\footnote{Dabei werden zusätzliche Informationen geloggt.}
+    \item \texttt{--no-plot, -np}: Deaktiviert die Erstellung der Plots.
+\end{itemize}
+
+Im Ordner \texttt{python/logs/} befindet sich eine Log-Datei, die Informationen über die Ausführung des Moduls enthält.
+Sie wird bei jedem Programmstart überschrieben.
+
+\subsubsection{Beispiele}
+\label{sssec:beispiele}
+
+\begin{itemize}
+    \item Ausführen des Moduls mit den Standardwerten:
+          \begin{center}
+              \texttt{python -m spidercam\_simulator}
+          \end{center}
+    \item Ausführen des Moduls mit Debug-Modus:
+          \begin{center}
+              \texttt{python -m spidercam\_simulator -d}
+          \end{center}
+    \item Ausführen des Moduls mit Debug-Modus und Deaktivierung der Plots:
+          \begin{center}
+              \texttt{python -m spidercam\_simulator -d -np}
+          \end{center}
+    \item Ausführen des Moduls mit einer Eingabedatei:
+          \begin{center}
+              \texttt{python -m spidercam\_simulator -i input\_file.csv}
+          \end{center}
+    \item Ausführen des Moduls mit einem Eingabeverzeichnis:
+          \begin{center}
+              \texttt{python -m spidercam\_simulator -i input\_dir/}
+          \end{center}
+    \item Ausführen des Moduls mit einem Ausgabeverzeichnis:
+          \begin{center}
+              \texttt{python -m spidercam\_simulator -o output\_dir/}
+          \end{center}
+\end{itemize}
+
+\subsubsection{Fehlermeldungen}
+\label{sssec:fehlermeldungen}
+
+Folgende Fehlermeldungen können auftreten:
+\begin{itemize}
+    \item \texttt{FileNotFoundError}: Eine angegebene Datei oder ein angegebenes Verzeichnis konnte nicht gefunden werden.
+    \item \texttt{ValueError}: Eine Eingabedatei enthält ungültige Werte.
+\end{itemize}
+
+\subsubsection{Skripte}
+\label{sssec:skripte}
+
+Im Ordner \texttt{python/scripts/} befinden sich Skripte, die die Ausführung des Moduls erleichtern.
+Sie können z. B. mit \texttt{sh scripts/\$name.sh} ausgeführt werden.
+
+Folgende Skripte sind vorhanden und relevant:
+\begin{itemize}
+    \item \texttt{generate\_docs.sh}: Generiert die Entwicklerdokumentation.
+    \item \texttt{generate\_uml.sh}: Generiert die UML-Klassendiagramme, die hier verwendet wurden.
+    \item \texttt{run.sh}: Führt das Modul mit den Standardwerten aus. Es werden alle Dateien aus dem Verzeichnis \texttt{python/input/} verarbeitet.
+    \item \texttt{run\_dev.sh}: Führt das Modul mit den Standardwerten aus. Es werden alle Dateien aus dem Verzeichnis \texttt{python/input/} verarbeitet.
+          Zusätzlich wird der Debug-Modus aktiviert.
+\end{itemize}

@@ -1,14 +1,19 @@
-\section{Abweichungen}
+\section{Abweichungen vom ursprünglichen Konzept}
 \label{sec:abweichungen}
 
 % Abweichungen zum urprünglichen Konzept
 Im Laufe der Entwicklung des Programms sind einige Abweichungen vom ursprünglichen Konzept aufgetreten.
-Diese sind:
+Im Allgemeinen sind diese Abweichungen aufgrund von erkannter Redundanz oder aufgrund von technischen Limitierungen bzw. Verbesserungen entstanden.
 
+Redundant waren beispielsweise:
 \begin{itemize}
-    \item $\ldots$
-    \item $\ldots$
-    \item $\ldots$
+    \item Abspeichern von Start- und Endkoordinaten in der \texttt{Movement}-Klasse, da diese Informationen bereits in den zugehörigen \texttt{Phasen} enthalten sind.
+    \item Analog das Abspeichern von Distanz und Dauer in der \texttt{Movement}-Klasse.
+    \item Dimension, Frequenz und Queue sind nun sinnvoller gespeichert als im usprünglichen Entwurf.
 \end{itemize}
 
-Besonders nennenswert ist dabei $\ldots$, da $\ldots$.
+Von den Algorithmen wurde nur minimal abgewichen.
+Teilweise wurden leicht andere Formeln zur Berechnung der Bewegungen verwendet um potentielle Rundungsfehler durch Operationen auf Gleitkommazahlen zu minimieren.
+
+Insbesondere bei der Berechnung von Distanzen, Zeiten und Geschwindigkeiten wurde bevorzugt auf die Verwendung von \texttt{numpy}-Arrays und -funktionen zurückgegriffen.
+Diese sind deutlich schneller, einfacher und robuster als die selbstgeschriebenen Alternativen.

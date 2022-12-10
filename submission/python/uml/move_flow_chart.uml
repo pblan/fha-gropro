@@ -1,0 +1,54 @@
+st3=>start: start move
+io5=>inputoutput: input: self, instruction, time
+op8=>operation: '🕹️ Moves the spidercam to a given position or updates the current movement at a given time\n\n        Args:\n            Instruction (Instruction): The instruction to move the spidercam. Defaults to None.\n            time (float): The time to update the current movement at. Defaults to -1.0.\n\n        Returns:\n            None\n        '
+cond11(align-next=no)=>condition: if ((instruction is None) and (time == (- 1.0)
+e18=>end: end function return
+cond25=>condition: if ((instruction is None) and (time != (- 1.0)))
+cond32(align-next=no)=>condition: if (queue is None)
+e39=>end: end function return
+cond46=>condition: if (movements[(- 1)].end_time() <= time)
+sub52=>subroutine: movements.append(queue)
+op54=>operation: queue = None
+e57=>end: end function return
+e64=>end: end function return
+cond73=>condition: if (len(movements) == 0)
+sub79=>subroutine: movements.append(Movement(self, instruction.start_time, start, instruction.dest))
+e82=>end: end function return
+cond93(align-next=no)=>condition: if (movements[(- 1)].end_time() > instruction.start_time)
+sub101=>subroutine: movements[(- 1)].start_deceleration(instruction.start_time)
+op103=>operation: queue = Movement(self, movements[(- 1)].end_time(), movements[(- 1)].dest(), instruction.dest)
+e106=>end: end function return
+cond113=>condition: if (queue is not None)
+sub121=>subroutine: movements.append(queue)
+op123=>operation: queue = None
+sub125=>subroutine: move(instruction)
+e128=>end: end function return
+sub136=>subroutine: movements.append(Movement(self, max(movements[(- 1)].end_time(), instruction.start_time), movements[(- 1)].dest(), instruction.dest))
+e138=>end: end move
+
+st3->io5
+io5->cond11
+cond11(yes, right)->e18
+cond11(no)->cond25
+cond25(yes, right)->cond32
+cond32(yes, right)->e39
+cond32(no)->cond46
+cond46(yes, right)->sub52
+sub52->op54
+op54->e57
+cond46(no)->e64
+cond25(no)->cond73
+cond73(yes, right)->sub79
+sub79->e82
+cond73(no)->cond93
+cond93(yes, right)->sub101
+sub101->op103
+op103->e106
+cond93(no)->cond113
+cond113(yes, right)->sub121
+sub121->op123
+op123->sub125
+sub125->e128
+cond113(no)->sub136
+sub136->e138
+

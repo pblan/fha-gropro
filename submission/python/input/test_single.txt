@@ -1,0 +1,7 @@
+# Beispiel einer einzigen Instruktion
+dim 100 100 50
+start 0 0 0
+vmax 25
+amax 5
+freq 10
+0 90 50 10

@@ -1,0 +1,11 @@
+# Example to test invalid start position
+dim 100 100 30
+start 10 80 40
+vmax 6
+amax 2
+freq 2
+0 50 40 30		
+20 10 80 10		
+22 50 40 30		
+23 35 50 30		
+27.5 10 80 20	

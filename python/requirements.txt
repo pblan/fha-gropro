@@ -5,3 +5,5 @@ setuptools
 pylint
 numpy
 matplotlib
+pyflowchart 
+imageio

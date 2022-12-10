@@ -1,0 +1,78 @@
+@startuml 
+init -> init : setup()
+
+loop for file in input_queue
+  init -> FileHandler : parse_input(file)
+  ' activate FileHandler 
+  FileHandler -> FileHandler : read_file()
+  FileHandler --> init : contents
+
+  init -> Parser : parse_input(contents)
+  ' activate Parser
+  Parser --> init : input
+
+  init -> Controller : from_dict(input)
+  ' activate Controller
+  Controller -> Controller : init(...)
+  Controller --> init : controller
+
+  init -> Controller : run()
+  loop len(instructions) > 0 || spidercam.isMoving() || spidercam.queue is not None 
+  alt len(instructions) > 0 
+    alt current_time > instructions[0].start_time 
+      Controller -> Spidercam : move(instructions.pop(0))
+
+      alt time given
+        alt not currently moving 
+          Spidercam -> Spidercam : movements.append(queue)
+          Spidercam -> Spidercam : queue = None
+        end 
+
+      else instruction given 
+        alt not yet moved 
+          Spidercam -> Spidercam : movements.append(instruction)
+        end
+
+        alt last movement not finished
+          Spidercam -> Movement : start_deceleration(instruction.start_time)
+          ' activate Movement
+
+          ' activate Phase 
+            Movement -> Phase 
+            Phase -> Phase : destination = get_position(offset)
+            Phase -> Phase : update()
+          ' deactivate Phase      
+          
+             
+
+          ' activate Phase 
+            Movement -> Phase
+            Phase -> Phase : destination = get_position(offset)
+            Phase -> Phase : update()
+          ' deactivate Phase      
+
+          ' deactivate Movement
+
+          Spidercam -> Spidercam : queue = instruction
+        else 
+          Spidercam -> Spidercam : movements.append(instruction)
+        end
+      end 
+    end
+  end 
+    Controller -> Spidercam : get_position(current_time)
+    Spidercam -> Spidercam : move(time)
+    Spidercam --> Controller : position
+    Controller -> Controller : get_rope_lengths(position)
+end 
+  ' activate Controller
+  Controller --> init : cam_positions, rope_lengths
+
+  init -> Parser : parse_output(input["dim"], input["freq"],  cam_positions, rope_lengths)
+  ' activate Parser
+  return output1, output2
+
+  init -> FileHandler : write_files(output1, output2)
+end 
+
+@enduml

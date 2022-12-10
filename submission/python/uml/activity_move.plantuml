@@ -1,0 +1,36 @@
+@startuml move(instruction, time)
+start
+
+if (no instruction or time given?) then (yes)
+  stop;
+
+(no) elseif (only time given) then (yes)
+  if (queue empty?) then (yes) 
+    stop;
+
+  (no) elseif (last instruction done?) then (yes)
+    :add queue to movements;
+    :queue = None;
+    stop;
+  else (no)
+    stop;
+  endif 
+
+(no) elseif (movements is empty?) then (yes)
+  :add instruction to movements;
+  stop;
+
+(no) elseif (last instruction not done?) then (yes) 
+  :start deceleration;
+  :queue = instruction;
+  stop;
+
+(no) elseif (last instruction done?) then (yes)
+  :add instruction to movements;
+  stop;
+
+else (no)
+  stop;
+endif
+
+@enduml

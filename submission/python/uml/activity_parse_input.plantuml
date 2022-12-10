@@ -1,0 +1,55 @@
+@startuml parse_input(string: str)
+start
+
+:instructions = empty list;
+:split string into lines;
+:line = first line;
+repeat 
+  if (line starts with "dim"?) then (yes)
+    :dim = parse_dim(line);
+  (no) elseif (line starts with "start"?) then (yes)
+    :start = parse_start(line);
+  (no) elseif (line starts with "vmax"?) then (yes)
+    :vmax = parse_vmax(line);
+  (no) elseif (line starts with "amax"?) then (yes)
+    :amax = parse_amax(line);
+  (no) elseif (line starts with "freq"?) then (yes)
+    :freq = parse_freq(line);
+  else (no)
+    :instructions.append(parse_instruction(line));
+  endif
+  backward: line = next line;
+repeat while(more lines?) is (yes)
+->no;
+
+if (len(dim) != 3 or any(dim <= 0)?) then (yes)
+  :raise error;
+  stop
+(no) elseif (len(start) != 3 or any(start < 0) or any(start >= dim)?) then (yes)
+  :raise error;
+  stop
+(no) elseif (vmax <= 0?) then (yes)
+  :raise error;
+  stop
+(no) elseif (amax <= 0?) then (yes)
+  :raise error;
+  stop
+(no) elseif (freq <= 0?) then (yes)
+  :raise error;
+  stop
+(no) elseif (len(instructions) == 0?) then (yes)
+  :raise error;
+  stop
+endif
+
+repeat 
+    if (len(instruction.pos) != 3 or any(instruction.pos < 0) or any(instruction.pos >= dim)?) then (yes)
+      :raise error;
+    stop
+    endif
+  backward: instruction = next instruction;
+repeat while(more instructions?) is (yes)
+
+:return dim, start, vmax, amax, freq, instructions;
+stop
+@enduml

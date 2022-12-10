@@ -1,0 +1,23 @@
+@startuml parse_output(dim, freq, cam_positions, rope_lengths)
+start
+
+:transpose cam_positions;
+:transpose rope_lengths;
+
+:time_stamps = range(0, length(cam_positions), intervall=freq);
+
+split 
+:output1 = "\\n".join(",".join(map(str, rope)) for rope in rope_lengths);
+
+split again 
+:output2 = dim[0] + "," + dim[1] + "," + dim[2] + "\\n";
+:output2 += ",".join(map(str, time_stamps)) + "\\n";
+
+:output2 += ",".join(map(str, cam_positions[0])) + "\\n";
+:output2 += ",".join(map(str, cam_positions[1])) + "\\n";
+:output2 += ",".join(map(str, cam_positions[2])) + "\\n";
+end split
+
+:return output1, output2;
+stop 
+@enduml

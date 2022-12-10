@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.27)  1 DEC 2022 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.27)  2 DEC 2022 11:31
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/mnt/c/Users/pblan/Git/fha-gropro/tex/main
+**/mnt/c/Users/pblan/Git/fha-gropro/tex/main.tex
 (/mnt/c/Users/pblan/Git/fha-gropro/tex/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./gropro.cls (/usr/share/texlive/texmf-dist/tex/latex/nag/nag.sty
@@ -525,13 +525,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box67
 \@float@everytoks=\toks31
 \@floatcapt=\box68
+) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip124
+\L@UnitsRaiseTextstyle=\skip125
+\L@UnitsRaiseScriptstyle=\skip126
 ) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
  (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip124
+\@mathmargin=\skip127
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -578,15 +583,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen263
 \lineht@=\dimen264
 \@envbody=\toks35
-\multlinegap=\skip125
-\multlinetaggap=\skip126
+\multlinegap=\skip128
+\multlinetaggap=\skip129
 \mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
 \g_MT_multlinerow_int=\count342
 \l_MT_multwidth_dim=\dimen265
-\origjot=\skip127
+\origjot=\skip130
 \l_MT_shortvdotswithinadjustabove_dim=\dimen266
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen267
 \l_MT_above_intertext_sep=\dimen268
@@ -611,9 +616,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks39
 \thm@notefont=\toks40
 \thm@headpunct=\toks41
-\thm@preskip=\skip128
-\thm@postskip=\skip129
-\thm@headsep=\skip130
+\thm@preskip=\skip131
+\thm@postskip=\skip132
+\thm@headsep=\skip133
 \dth@everypar=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
@@ -860,18 +865,18 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-\@venn@Ax=\skip131
-\@venn@Ay=\skip132
-\@venn@Bx=\skip133
-\@venn@By=\skip134
-\@venn@Cx=\skip135
-\@venn@Cy=\skip136
-\@venn@w=\skip137
-\@venn@h=\skip138
-\@venn@intersect@i@x=\skip139
-\@venn@intersect@i@y=\skip140
-\@venn@intersect@ii@x=\skip141
-\@venn@intersect@ii@y=\skip142
+\@venn@Ax=\skip134
+\@venn@Ay=\skip135
+\@venn@Bx=\skip136
+\@venn@By=\skip137
+\@venn@Cx=\skip138
+\@venn@Cy=\skip139
+\@venn@w=\skip140
+\@venn@h=\skip141
+\@venn@intersect@i@x=\skip142
+\@venn@intersect@i@y=\skip143
+\@venn@intersect@ii@x=\skip144
+\@venn@intersect@ii@y=\skip145
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarychains.code.tex
 File: tikzlibrarychains.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
@@ -1035,8 +1040,8 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \page@free=\dimen344
 \premulticols=\dimen345
 \postmulticols=\dimen346
-\multicolsep=\skip143
-\multicolbaselineskip=\skip144
+\multicolsep=\skip146
+\multicolbaselineskip=\skip147
 \partial@page=\box121
 \last@line=\box122
 \maxbalancingoverflow=\dimen347
@@ -1167,7 +1172,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip145
+\Hy@SectionHShift=\skip148
 ) (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1228,14 +1233,14 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \c@blx@sectionciteorder@0=\count464
 \blx@entrysetcounter=\count465
 \blx@biblioinstance=\count466
-\labelnumberwidth=\skip146
-\labelalphawidth=\skip147
-\biblabelsep=\skip148
-\bibitemsep=\skip149
-\bibnamesep=\skip150
-\bibinitsep=\skip151
-\bibparsep=\skip152
-\bibhang=\skip153
+\labelnumberwidth=\skip149
+\labelalphawidth=\skip150
+\biblabelsep=\skip151
+\bibitemsep=\skip152
+\bibnamesep=\skip153
+\bibinitsep=\skip154
+\bibparsep=\skip155
+\bibhang=\skip156
 \blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
@@ -1317,20 +1322,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count535
 \c@pageref=\count536
 \c@savedpageref=\count537
-\shorthandwidth=\skip154
-\shortjournalwidth=\skip155
-\shortserieswidth=\skip156
-\shorttitlewidth=\skip157
-\shortauthorwidth=\skip158
-\shorteditorwidth=\skip159
-\locallabelnumberwidth=\skip160
-\locallabelalphawidth=\skip161
-\localshorthandwidth=\skip162
-\localshortjournalwidth=\skip163
-\localshortserieswidth=\skip164
-\localshorttitlewidth=\skip165
-\localshortauthorwidth=\skip166
-\localshorteditorwidth=\skip167
+\shorthandwidth=\skip157
+\shortjournalwidth=\skip158
+\shortserieswidth=\skip159
+\shorttitlewidth=\skip160
+\shortauthorwidth=\skip161
+\shorteditorwidth=\skip162
+\locallabelnumberwidth=\skip163
+\locallabelalphawidth=\skip164
+\localshorthandwidth=\skip165
+\localshortjournalwidth=\skip166
+\localshortserieswidth=\skip167
+\localshorttitlewidth=\skip168
+\localshortauthorwidth=\skip169
+\localshorteditorwidth=\skip170
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -1407,12 +1412,21 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-\tikzscale@accuracy=\skip168
+\tikzscale@accuracy=\skip171
 LaTeX Font Info:    Trying to load font information for T1+pplx on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
+) (./main.aux
+
+LaTeX Warning: Label `fig:length_change' multiply defined.
+
+
+LaTeX Warning: Label `sssec:format' multiply defined.
+
+
+LaTeX Warning: Label `sssec:bewegung_der_spidercam' multiply defined.
+
 )
-No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1439,6 +1453,7 @@ Package nag Info: Command \mainmatter not defined, skipping amendment on input l
 Package nag Info: Command \backmatter not defined, skipping amendment on input line 20.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input line 20.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input line 20.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1562,9 +1577,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 Package nag Info: Command \captionabove not defined, skipping amendment on input line 20.
@@ -1572,7 +1586,7 @@ Package nag Info: Command \captionbelow not defined, skipping amendment on input
 Package nag Info: Command \hc@caption not defined, skipping amendment on input line 20.
 Package nag Info: Command \topcaption not defined, skipping amendment on input line 20.
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on input line 21.
-(/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.fd)
+ (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <14.4> not available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead on input line 21.
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 21.
@@ -1632,20 +1646,17 @@ Package pdftex.def Info: logo.jpg  used on input line 21.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./matse-logo.png (PNG copy)> <./logo.jpg>] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./matse-logo.png (PNG copy)> <./logo.jpg>] [2] (./main.toc [3
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3
-
-] (./includes/01_aufgabenanalyse.tex
+ [4] (./includes/01_aufgabenanalyse.tex
 LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 14.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 )
-
-LaTeX Warning: Reference `fig:length_change' on page 4 undefined on input line 14.
-
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 15.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1658,474 +1669,327 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 15.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 15.
-<../python/output/test_single_cam_pos.png, id=27, 294.6207pt x 290.2845pt>
+<../python/output/test_single_cam_pos.png, id=122, 294.6207pt x 290.2845pt>
 File: ../python/output/test_single_cam_pos.png Graphic file (type png)
 <use ../python/output/test_single_cam_pos.png>
 Package pdftex.def Info: ../python/output/test_single_cam_pos.png  used on input line 25.
 (pdftex.def)             Requested size: 202.29776pt x 199.32648pt.
-<../python/output/test_single_rope_lengths.png, id=29, 413.1435pt x 312.6882pt>
+<../python/output/test_single_rope_lengths.png, id=124, 413.1435pt x 312.6882pt>
 File: ../python/output/test_single_rope_lengths.png Graphic file (type png)
 <use ../python/output/test_single_rope_lengths.png>
 Package pdftex.def Info: ../python/output/test_single_rope_lengths.png  used on input line 32.
 (pdftex.def)             Requested size: 202.29776pt x 153.10881pt.
-
-LaTeX Warning: Reference `fig:example_input' on page 4 undefined on input line 55.
-
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 60.
-(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 61.
+ (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 60.
+(Font)              scaled to size 8.50006pt on input line 61.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./figures/example_input.txt) [4 <../python/output/test_single_cam_pos.png> <../python/output/test_single_rope_lengths.png>]
+ (./figures/example_input.txt) [5 <../python/output/test_single_cam_pos.png> <../python/output/test_single_rope_lengths.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 69.
- [5]
-
-LaTeX Warning: Reference `fig:example_output_1' on page 6 undefined on input line 106.
-
-
-LaTeX Warning: Reference `fig:example_output_2' on page 6 undefined on input line 109.
-
-(./figures/example_output_1.txt) (./figures/example_output_2.txt) [6]
-<figures/three_phases.png, id=89, 1227.8673pt x 228.1323pt>
+(Font)              scaled to size 10.20007pt on input line 70.
+ [6] (./figures/example_output_1.txt) (./figures/example_output_2.txt) [7]
+<figures/three_phases.png, id=181, 835.923pt x 228.1323pt>
 File: figures/three_phases.png Graphic file (type png)
 <use figures/three_phases.png>
-Package pdftex.def Info: figures/three_phases.png  used on input line 214.
-(pdftex.def)             Requested size: 449.55365pt x 83.52344pt.
+Package pdftex.def Info: figures/three_phases.png  used on input line 215.
+(pdftex.def)             Requested size: 449.55365pt x 122.68832pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 215.
+(Font)              scaled to size 11.40997pt on input line 216.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 215.
+(Font)              scaled to size 8.33606pt on input line 216.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 215.
+(Font)              scaled to size 11.40997pt on input line 216.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 215.
- [7 <./figures/three_phases.png>]
-
-LaTeX Warning: Reference `fig:three_phases' on page 8 undefined on input line 232.
-
-
-LaTeX Warning: Reference `fig:two_phases' on page 8 undefined on input line 261.
-
-<figures/two_phases.png, id=99, 1227.8673pt x 228.3732pt>
+(Font)              scaled to size 8.33606pt on input line 216.
+ [8 <./figures/three_phases.png>]
+<figures/two_phases.png, id=191, 835.923pt x 228.3732pt>
 File: figures/two_phases.png Graphic file (type png)
 <use figures/two_phases.png>
-Package pdftex.def Info: figures/two_phases.png  used on input line 282.
-(pdftex.def)             Requested size: 449.55365pt x 83.61165pt.
-[8]
-
-LaTeX Warning: Reference `fig:forced_deceleration' on page 9 undefined on input line 299.
-
-<figures/forced_deceleration.png, id=105, 827.2506pt x 227.8914pt>
+Package pdftex.def Info: figures/two_phases.png  used on input line 283.
+(pdftex.def)             Requested size: 449.55365pt x 122.81789pt.
+ [9]
+<figures/forced_deceleration.png, id=199, 827.2506pt x 227.8914pt>
 File: figures/forced_deceleration.png Graphic file (type png)
 <use figures/forced_deceleration.png>
 Package pdftex.def Info: figures/forced_deceleration.png  used on input line 303.
 (pdftex.def)             Requested size: 449.55365pt x 123.8454pt.
-[9 <./figures/two_phases.png> <./figures/forced_deceleration.png>]) (./includes/02_verfahrensbeschreibung.tex
+ [10 <./figures/two_phases.png> <./figures/forced_deceleration.png>]) [11] (./includes/02_verfahrensbeschreibung.tex
 Overfull \hbox (0.8963pt too wide) in paragraph at lines 8--9
 \T1/pplx/m/n/12 (-20) Konstantgeschwindigkeits- und ei-ner Brems-pha-se oder nur aus ei-ner Beschleunigungs-
  []
 
-[10]) (./includes/03_programmbeschreibung.tex
 
-LaTeX Warning: Reference `fig:classes' on page 11 undefined on input line 18.
+Overfull \hbox (13.48741pt too wide) in paragraph at lines 24--25
+[]\T1/fvm/m/n/12 mode\T1/pplx/m/n/12 (-20) : Ein Wert aus dem Enum \T1/fvm/m/n/12 Mode\T1/pplx/m/n/12 (-20) , der an-gibt, ob es sich um ei-ne Beschleunigungs-
+ []
 
+<../python/uml/phase.pdf, id=212, 379.4175pt x 316.18124pt>
+File: ../python/uml/phase.pdf Graphic file (type pdf)
+<use ../python/uml/phase.pdf>
+Package pdftex.def Info: ../python/uml/phase.pdf  used on input line 36.
+(pdftex.def)             Requested size: 314.68617pt x 262.2422pt.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 37.
+[12]
+<../python/uml/movement.pdf, id=217, 490.83376pt x 316.18124pt>
+File: ../python/uml/movement.pdf Graphic file (type pdf)
+<use ../python/uml/movement.pdf>
+Package pdftex.def Info: ../python/uml/movement.pdf  used on input line 60.
+(pdftex.def)             Requested size: 314.68617pt x 202.71713pt.
+ [13 <../python/uml/phase.pdf>]
+<../python/uml/spidercam.pdf, id=240, 594.22pt x 331.2375pt>
+File: ../python/uml/spidercam.pdf Graphic file (type pdf)
+<use ../python/uml/spidercam.pdf>
+Package pdftex.def Info: ../python/uml/spidercam.pdf  used on input line 81.
+(pdftex.def)             Requested size: 314.68617pt x 175.42361pt.
+ [14 <../python/uml/movement.pdf> <../python/uml/spidercam.pdf
 
-LaTeX Warning: Reference `fig:example_sequence_diagram' on page 11 undefined on input line 35.
-
-<figures/example_sequence_diagram.png, id=123, 750.805pt x 553.06625pt>
-File: figures/example_sequence_diagram.png Graphic file (type png)
-<use figures/example_sequence_diagram.png>
-Package pdftex.def Info: figures/example_sequence_diagram.png  used on input line 40.
-(pdftex.def)             Requested size: 359.64429pt x 264.92868pt.
-) (./includes/04_testing_und_laufzeitanalyse.tex [11]
-
-LaTeX Warning: Reference `tab:example_testcases' on page 12 undefined on input line 14.
-
-
-LaTeX Warning: Reference `sec:anhang' on page 12 undefined on input line 14.
-
-[12 <./figures/example_sequence_diagram.png>]
-
-LaTeX Warning: Reference `tab:example_testcases' on page 13 undefined on input line 55.
-
-
-LaTeX Warning: Reference `tab:example_runtime' on page 13 undefined on input line 55.
-
-<figures/example_runtime.png, id=153, 853.1875pt x 569.12625pt>
-File: figures/example_runtime.png Graphic file (type png)
-<use figures/example_runtime.png>
-Package pdftex.def Info: figures/example_runtime.png  used on input line 82.
-(pdftex.def)             Requested size: 359.64429pt x 239.9085pt.
-
-LaTeX Warning: Reference `ssec:ausblick' on page 13 undefined on input line 90.
-
-) (./includes/05_abweichungen.tex [13 <./figures/example_runtime.png>]) (./includes/06_zusammenfassung_und_ausblick.tex) [14] (./includes/07_grafiken.tex
-<../python/uml/classes.pdf, id=171, 2246.3925pt x 1192.455pt>
+pdfTeX warning: pdflatex (file ../python/uml/spidercam.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../python/uml/controller.pdf, id=276, 532.99126pt x 301.125pt>
+File: ../python/uml/controller.pdf Graphic file (type pdf)
+<use ../python/uml/controller.pdf>
+Package pdftex.def Info: ../python/uml/controller.pdf  used on input line 110.
+(pdftex.def)             Requested size: 314.68617pt x 177.79544pt.
+ [15 <../python/uml/controller.pdf>]
+<../python/uml/io.pdf, id=299, 1431.3475pt x 210.7875pt>
+File: ../python/uml/io.pdf Graphic file (type pdf)
+<use ../python/uml/io.pdf>
+Package pdftex.def Info: ../python/uml/io.pdf  used on input line 159.
+(pdftex.def)             Requested size: 449.55365pt x 66.20221pt.
+<../python/uml/plotter.pdf, id=300, 377.41pt x 271.0125pt>
+File: ../python/uml/plotter.pdf Graphic file (type pdf)
+<use ../python/uml/plotter.pdf>
+Package pdftex.def Info: ../python/uml/plotter.pdf  used on input line 173.
+(pdftex.def)             Requested size: 314.68617pt x 225.97pt.
+ [16 <../python/uml/io.pdf>]
+<../python/uml/activity_parse_input.png, id=326, 1420.30624pt x 970.62625pt>
+File: ../python/uml/activity_parse_input.png Graphic file (type png)
+<use ../python/uml/activity_parse_input.png>
+Package pdftex.def Info: ../python/uml/activity_parse_input.png  used on input line 204.
+(pdftex.def)             Requested size: 449.55365pt x 307.21513pt.
+ [17 <../python/uml/plotter.pdf>]
+<../python/uml/activity_move.png, id=350, 1228.59pt x 341.275pt>
+File: ../python/uml/activity_move.png Graphic file (type png)
+<use ../python/uml/activity_move.png>
+Package pdftex.def Info: ../python/uml/activity_move.png  used on input line 222.
+(pdftex.def)             Requested size: 449.55365pt x 124.87418pt.
+ [18 <../python/uml/activity_parse_input.png (PNG copy)> <../python/uml/activity_move.png (PNG copy)>] [19]
+<../python/uml/activity_parse_output_simplified.png, id=371, 823.075pt x 609.27625pt>
+File: ../python/uml/activity_parse_output_simplified.png Graphic file (type png)
+<use ../python/uml/activity_parse_output_simplified.png>
+Package pdftex.def Info: ../python/uml/activity_parse_output_simplified.png  used on input line 279.
+(pdftex.def)             Requested size: 359.64429pt x 266.223pt.
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 8.50006pt on input line 285.
+) [20 <../python/uml/activity_parse_output_simplified.png (PNG copy)>] (./includes/03_programmbeschreibung.tex
+<../python/uml/classes.pdf, id=395, 594.22pt x 1177.39874pt>
 File: ../python/uml/classes.pdf Graphic file (type pdf)
 <use ../python/uml/classes.pdf>
-Package pdftex.def Info: ../python/uml/classes.pdf  used on input line 7.
-(pdftex.def)             Requested size: 449.55365pt x 238.63234pt.
-) (./includes/08_benutzeranleitung.tex [15
+Package pdftex.def Info: ../python/uml/classes.pdf  used on input line 36.
+(pdftex.def)             Requested size: 314.68617pt x 623.55125pt.
+ [21]
+<../python/uml/sequence.png, id=402, 1456.44125pt x 1416.29124pt>
+File: ../python/uml/sequence.png Graphic file (type png)
+<use ../python/uml/sequence.png>
+Package pdftex.def Info: ../python/uml/sequence.png  used on input line 44.
+(pdftex.def)             Requested size: 449.55365pt x 437.144pt.
+ [22 <../python/uml/classes.pdf>]
+Overfull \hbox (12.8583pt too wide) in paragraph at lines 62--63
+[]\T1/pplx/m/n/12 (-20) F¸r den Zeit-punkt $\OT1/pplx/m/n/12 (-20) 0$ \T1/pplx/m/n/12 (-20) exis-tiert ei-ne In-struk-ti-on mit Ziel-ko-or-di-na-ten $\OML/zplm/m/it/12 k[] \OT1/zplm/m/n/12 = (\OT1/pplx/m/n/12 (-20) 50, 40, 30\OT1/zplm/m/n/12 )[]$\T1/pplx/m/n/12 (-20) . 
+ []
+
+[23 <../python/uml/sequence.png (PNG copy)>] [24]
+Overfull \hbox (3.46782pt too wide) in paragraph at lines 101--102
+[]\T1/pplx/m/n/12 (-20) Zum Zeit-punkt 22 exis-tiert ei-ne In-struk-ti-on mit Ziel-ko-or-di-na-ten $\OML/zplm/m/it/12 k[] \OT1/zplm/m/n/12 = (\OT1/pplx/m/n/12 (-20) 50, 40, 30\OT1/zplm/m/n/12 )[]$\T1/pplx/m/n/12 (-20) . 
+ []
+
+
+Overfull \hbox (3.46782pt too wide) in paragraph at lines 118--119
+[]\T1/pplx/m/n/12 (-20) Zum Zeit-punkt 23 exis-tiert ei-ne In-struk-ti-on mit Ziel-ko-or-di-na-ten $\OML/zplm/m/it/12 k[] \OT1/zplm/m/n/12 = (\OT1/pplx/m/n/12 (-20) 30, 50, 20\OT1/zplm/m/n/12 )[]$\T1/pplx/m/n/12 (-20) . 
+ []
+
+
+Overfull \hbox (12.28783pt too wide) in paragraph at lines 122--123
+[]\T1/pplx/m/n/12 (-20) Zum Zeit-punkt 27.5 exis-tiert ei-ne In-struk-ti-on mit Ziel-ko-or-di-na-ten $\OML/zplm/m/it/12 k[] \OT1/zplm/m/n/12 = (\OT1/pplx/m/n/12 (-20) 10, 80, 20\OT1/zplm/m/n/12 )[]$\T1/pplx/m/n/12 (-20) . 
+ []
+
+[25]) [26] (./includes/04_testing_und_laufzeitanalyse.tex
+Overfull \hbox (49.7844pt too wide) in paragraph at lines 20--52
+ [][] 
+ []
+
+<../python/output/IHK_1_cam_pos.png, id=444, 294.6207pt x 290.2845pt>
+File: ../python/output/IHK_1_cam_pos.png Graphic file (type png)
+<use ../python/output/IHK_1_cam_pos.png>
+Package pdftex.def Info: ../python/output/IHK_1_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 199.32648pt.
+<../python/output/IHK_1_rope_lengths.png, id=445, 419.4069pt x 312.6882pt>
+File: ../python/output/IHK_1_rope_lengths.png Graphic file (type png)
+<use ../python/output/IHK_1_rope_lengths.png>
+Package pdftex.def Info: ../python/output/IHK_1_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 150.82816pt.
+<../python/output/IHK_2_cam_pos.png, id=446, 294.6207pt x 290.2845pt>
+File: ../python/output/IHK_2_cam_pos.png Graphic file (type png)
+<use ../python/output/IHK_2_cam_pos.png>
+Package pdftex.def Info: ../python/output/IHK_2_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 199.32648pt.
+<../python/output/IHK_2_rope_lengths.png, id=447, 413.1435pt x 312.6882pt>
+File: ../python/output/IHK_2_rope_lengths.png Graphic file (type png)
+<use ../python/output/IHK_2_rope_lengths.png>
+Package pdftex.def Info: ../python/output/IHK_2_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 153.10881pt.
+[27]
+<../python/output/test_spiral_cam_pos.png, id=453, 301.125pt x 290.2845pt>
+File: ../python/output/test_spiral_cam_pos.png Graphic file (type png)
+<use ../python/output/test_spiral_cam_pos.png>
+Package pdftex.def Info: ../python/output/test_spiral_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 195.02112pt.
+<../python/output/test_spiral_rope_lengths.png, id=454, 423.984pt x 312.6882pt>
+File: ../python/output/test_spiral_rope_lengths.png Graphic file (type png)
+<use ../python/output/test_spiral_rope_lengths.png>
+Package pdftex.def Info: ../python/output/test_spiral_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 149.1964pt.
+
+Underfull \hbox (badness 1681) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (b) |\T1/pplx/m/n/10 (+20) Ver-‰n-de-rung der Seil-l‰n-gen f¸r Test
+ []
+
+<../python/output/test_diagonals_cam_pos.png, id=455, 294.6207pt x 290.2845pt>
+File: ../python/output/test_diagonals_cam_pos.png Graphic file (type png)
+<use ../python/output/test_diagonals_cam_pos.png>
+Package pdftex.def Info: ../python/output/test_diagonals_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 199.32648pt.
+
+Underfull \hbox (badness 5893) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (a) |\T1/pplx/m/n/10 (+20) Be-we-gung der Spi-der-cam f¸r Test
+ []
+
+<../python/output/test_diagonals_rope_lengths.png, id=456, 413.1435pt x 314.6154pt>
+File: ../python/output/test_diagonals_rope_lengths.png Graphic file (type png)
+<use ../python/output/test_diagonals_rope_lengths.png>
+Package pdftex.def Info: ../python/output/test_diagonals_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 154.05247pt.
+
+Underfull \hbox (badness 1681) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (b) |\T1/pplx/m/n/10 (+20) Ver-‰n-de-rung der Seil-l‰n-gen f¸r Test
+ []
+
+[28 <../python/output/IHK_1_cam_pos.png> <../python/output/IHK_1_rope_lengths.png> <../python/output/IHK_2_cam_pos.png> <../python/output/IHK_2_rope_lengths.png>]
+<../python/output/test_edges_cam_pos.png, id=467, 294.6207pt x 290.2845pt>
+File: ../python/output/test_edges_cam_pos.png Graphic file (type png)
+<use ../python/output/test_edges_cam_pos.png>
+Package pdftex.def Info: ../python/output/test_edges_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 199.32648pt.
+<../python/output/test_edges_rope_lengths.png, id=468, 413.1435pt x 314.6154pt>
+File: ../python/output/test_edges_rope_lengths.png Graphic file (type png)
+<use ../python/output/test_edges_rope_lengths.png>
+Package pdftex.def Info: ../python/output/test_edges_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 154.05247pt.
+<../python/output/test_multiple_per_step_cam_pos.png, id=469, 297.9933pt x 290.2845pt>
+File: ../python/output/test_multiple_per_step_cam_pos.png Graphic file (type png)
+<use ../python/output/test_multiple_per_step_cam_pos.png>
+Package pdftex.def Info: ../python/output/test_multiple_per_step_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 197.06749pt.
+
+Underfull \hbox (badness 5893) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (a) |\T1/pplx/m/n/10 (+20) Be-we-gung der Spi-der-cam f¸r Test
+ []
+
+<../python/output/test_multiple_per_step_rope_lengths.png, id=470, 413.1435pt x 312.6882pt>
+File: ../python/output/test_multiple_per_step_rope_lengths.png Graphic file (type png)
+<use ../python/output/test_multiple_per_step_rope_lengths.png>
+Package pdftex.def Info: ../python/output/test_multiple_per_step_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 153.10881pt.
+
+Underfull \hbox (badness 1681) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (b) |\T1/pplx/m/n/10 (+20) Ver-‰n-de-rung der Seil-l‰n-gen f¸r Test
+ []
+
+[29 <../python/output/test_spiral_cam_pos.png> <../python/output/test_spiral_rope_lengths.png> <../python/output/test_diagonals_cam_pos.png> <../python/output/test_diagonals_rope_lengths.png>]
+<../python/output/test_multiple_simultaneously_cam_pos.png, id=481, 297.9933pt x 290.2845pt>
+File: ../python/output/test_multiple_simultaneously_cam_pos.png Graphic file (type png)
+<use ../python/output/test_multiple_simultaneously_cam_pos.png>
+Package pdftex.def Info: ../python/output/test_multiple_simultaneously_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 197.06749pt.
+
+Underfull \hbox (badness 5893) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (a) |\T1/pplx/m/n/10 (+20) Be-we-gung der Spi-der-cam f¸r Test
+ []
+
+<../python/output/test_multiple_simultaneously_rope_lengths.png, id=482, 413.1435pt x 312.6882pt>
+File: ../python/output/test_multiple_simultaneously_rope_lengths.png Graphic file (type png)
+<use ../python/output/test_multiple_simultaneously_rope_lengths.png>
+Package pdftex.def Info: ../python/output/test_multiple_simultaneously_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 153.10881pt.
+
+Underfull \hbox (badness 1681) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (b) |\T1/pplx/m/n/10 (+20) Ver-‰n-de-rung der Seil-l‰n-gen f¸r Test
+ []
+
+<../python/output/test_same_dest_cam_pos.png, id=483, 294.6207pt x 290.2845pt>
+File: ../python/output/test_same_dest_cam_pos.png Graphic file (type png)
+<use ../python/output/test_same_dest_cam_pos.png>
+Package pdftex.def Info: ../python/output/test_same_dest_cam_pos.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 199.32648pt.
+
+Underfull \hbox (badness 5893) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (a) |\T1/pplx/m/n/10 (+20) Be-we-gung der Spi-der-cam f¸r Test
+ []
+
+<../python/output/test_same_dest_rope_lengths.png, id=484, 413.1435pt x 312.6882pt>
+File: ../python/output/test_same_dest_rope_lengths.png Graphic file (type png)
+<use ../python/output/test_same_dest_rope_lengths.png>
+Package pdftex.def Info: ../python/output/test_same_dest_rope_lengths.png  used on input line 89.
+(pdftex.def)             Requested size: 202.29776pt x 153.10881pt.
+
+Underfull \hbox (badness 1681) in paragraph at lines 89--89
+[]\T1/pplx/b/n/10 (+20) (b) |\T1/pplx/m/n/10 (+20) Ver-‰n-de-rung der Seil-l‰n-gen f¸r Test
+ []
+
+[30 <../python/output/test_edges_cam_pos.png> <../python/output/test_edges_rope_lengths.png> <../python/output/test_multiple_per_step_cam_pos.png> <../python/output/test_multiple_per_step_rope_lengths.png>]) [31 <../python/output/test_multiple_simultaneously_cam_pos.png> <../python/output/test_multiple_simultaneously_rope_lengths.png> <../python/output/test_same_dest_cam_pos.png> <../python/output/test_same_dest_rope_lengths.png>] (./includes/05_abweichungen.tex) [32] (./includes/06_zusammenfassung_und_ausblick.tex) [33] (./includes/07_benutzeranleitung.tex [34
 
 ]
-Overfull \vbox (7.41345pt too high) has occurred while \output is active []
+Overfull \hbox (4.30281pt too wide) in paragraph at lines 70--72
+[]\T1/pplx/m/n/12 (-20) Dabei wird das Mo-dul mit den Stan-dard-wer-ten aus-ge-f¸hrt, die in der Da-tei \T1/fvm/m/n/12 config.ini
+ []
 
- [16 <../python/uml/classes.pdf>]) (./includes/09_entwicklerdokumentation.tex
-
-LaTeX Warning: Reference `lst:generate_documentation' on page 17 undefined on input line 9.
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[35]) [36] (./includes/08_entwicklerdokumentation.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for TS1+fvm on input line 14.
+LaTeX Font Info:    Trying to load font information for TS1+fvm on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fvm.fd
 File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
 )
 LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 14.
+(Font)              scaled to size 8.50006pt on input line 16.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./includes/10_hilfsmittel.tex
-
-LaTeX Warning: Reference `tab:tools' on page 17 undefined on input line 5.
-
-) (./includes/11_quellcode.tex [17] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (../python/spidercam_simulator/__init__.py
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 8.50006pt on input line 5.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 8.
- (../python/spidercam_simulator/__main__.py [18] [19] [20] [21]) (../python/spidercam_simulator/controller.py
-
-../python/spidercam_simulator/controller.py:10: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECé).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10     """üéÆ 
-                 A class for initializing and controlling the spidercam"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:10: LaTeX Error: Invalid UTF-8 byte "AE.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10     """üéÆ 
-                 A class for initializing and controlling the spidercam"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:21: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECú).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21         """‚ú® 
-                    Initializes the Controller class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:21: LaTeX Error: Invalid UTF-8 byte "A8.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21         """‚ú® 
-                    Initializes the Controller class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[22]
-
-../python/spidercam_simulator/controller.py:58: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58         """üì¶ 
-                     Stores the anchor positions in regard to the dimensions
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:58: LaTeX Error: Invalid UTF-8 byte "A6.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58         """üì¶ 
-                     Stores the anchor positions in regard to the dimensions
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:74: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74         """üìî 
-                     Creates a Controller object from a dictionary
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:74: LaTeX Error: Invalid UTF-8 byte "94.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74         """üìî 
-                     Creates a Controller object from a dictionary
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:94: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECß).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.94         """üßµ 
-                     Returns a string representation of the Controller object
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:94: LaTeX Error: Invalid UTF-8 byte "B5.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.94         """üßµ 
-                     Returns a string representation of the Controller object
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[23]
-
-../python/spidercam_simulator/controller.py:102: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECë).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102         """üëü 
-                      Runs the instructions for the spidercam
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:102: LaTeX Error: Invalid UTF-8 byte "9F.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102         """üëü 
-                      Runs the instructions for the spidercam
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[24]
-
-../python/spidercam_simulator/controller.py:145: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145         """üìè 
-                      Returns the rope lengths for a given position
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/controller.py:145: LaTeX Error: Invalid UTF-8 byte "8F.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145         """üìè 
-                      Returns the rope lengths for a given position
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-) (../python/spidercam_simulator/io.py
-
-../python/spidercam_simulator/io.py:8: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8     """üìÅ 
-                A class for handling input and output"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/io.py:8: LaTeX Error: Invalid UTF-8 byte "81.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8     """üìÅ 
-                A class for handling input and output"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[25]
-
-../python/spidercam_simulator/io.py:77: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECî).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77     """üîç 
-                 Finds the location of the given file/directory
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/io.py:77: LaTeX Error: Invalid UTF-8 byte "8D.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77     """üîç 
-                 Finds the location of the given file/directory
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[26]
-
-../python/spidercam_simulator/io.py:117: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.117     """üìù 
-                  A class for parsing input strings"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/io.py:117: LaTeX Error: Invalid UTF-8 byte "9D.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.117     """üìù 
-                  A class for parsing input strings"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
+) [37] (./includes/09_hilfsmittel.tex) [38] (./includes/10_testdateien.tex (../python/input/IHK_1.txt) (../python/input/IHK_2.txt) (../python/input/test_spiral.txt [39]) (../python/input/test_single.txt) (../python/input/test_diagonals.txt [40]) (../python/input/test_edges.txt) (../python/input/test_multiple_per_step.txt) (../python/input/test_multiple_simultaneously.txt) (../python/input/test_same_dest.txt [41]) (../python/input/test_invalid_dim.txt) (../python/input/test_invalid_vmax.txt) (../python/input/test_invalid_amax.txt) (../python/input/test_invalid_freq.txt [42]) (../python/input/test_invalid_instruction.txt) (../python/input/test_invalid_no_instruction.txt)) [43] (./includes/11_quellcode.tex (./code/__init__.py) (./code/__main__.py [44] [45] [46]) (./code/controller.py [47] [48] [49] [50]) (./code/io.py [51] [52]
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 126.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 126.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+            Default family used instead on input line 128.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 128.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 126.
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 128.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -2135,911 +1999,64 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 126.
+            Default family used instead on input line 128.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 126.
- [27]
+            Default family used instead on input line 128.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 138.
+            Default family used instead on input line 140.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 138.
+            Default family used instead on input line 140.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 138.
- [28]
+            Default family used instead on input line 140.
+ [53] [54]
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 228.
+            Default family used instead on input line 230.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 228.
+            Default family used instead on input line 230.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 228.
+            Default family used instead on input line 230.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 233.
+            Default family used instead on input line 235.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 233.
+            Default family used instead on input line 235.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 233.
- [29]
+            Default family used instead on input line 235.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 236.
+            Default family used instead on input line 238.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 236.
+            Default family used instead on input line 238.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 236.
+            Default family used instead on input line 238.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 242.
+            Default family used instead on input line 244.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 242.
+            Default family used instead on input line 244.
 LaTeX Info: Symbol \textasciigrave not provided by
             font family fvm in TS1 encoding.
-            Default family used instead on input line 242.
- [30]
-
-../python/spidercam_simulator/io.py:296: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296     """üìù 
-                  A class for defining an instruction"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/io.py:296: LaTeX Error: Invalid UTF-8 byte "9D.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296     """üìù 
-                  A class for defining an instruction"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[31]) (../python/spidercam_simulator/movement.py
-
-../python/spidercam_simulator/movement.py:10: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECû).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10     """‚û°Ô∏è 
-                   A class for defining a movement"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:10: LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10     """‚û°Ô∏è 
-                   A class for defining a movement"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:10: LaTeX Error: Invalid UTF-8 byte sequence (Ô\lst@EC∏\lst@ECè).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10     """‚û°Ô∏è 
-                   A class for defining a movement"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:21: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECú).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21         """‚ú® 
-                    Initializes the Movement class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:21: LaTeX Error: Invalid UTF-8 byte "A8.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21         """‚ú® 
-                    Initializes the Movement class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[32]
-
-../python/spidercam_simulator/movement.py:47: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECè).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47         """‚è≥ 
-                    Returns the duration of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:47: LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47         """‚è≥ 
-                    Returns the duration of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:55: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55         """üìê 
-                     Returns the distance of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:55: LaTeX Error: Invalid UTF-8 byte "90.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55         """üìê 
-                     Returns the distance of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:63: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECè).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63         """üèÅ 
-                     Returns the end time of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:63: LaTeX Error: Invalid UTF-8 byte "81.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63         """üèÅ 
-                     Returns the end time of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:71: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71         """üìê 
-                     Calculates the phases of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:71: LaTeX Error: Invalid UTF-8 byte "90.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71         """üìê 
-                     Calculates the phases of the movement
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[33] [34]
-
-../python/spidercam_simulator/movement.py:154: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECö).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.154         """üö¶ 
-                      Starts deceleration
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:154: LaTeX Error: Invalid UTF-8 byte "A6.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.154         """üö¶ 
-                      Starts deceleration
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[35] [36]
-
-../python/spidercam_simulator/movement.py:230: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.230         """üìê 
-                      Returns the phase at the given time
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:230: LaTeX Error: Invalid UTF-8 byte "90.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.230         """üìê 
-                      Returns the phase at the given time
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:251: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECî).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.251         """üîé 
-                      Returns the position of the movement at the time
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/movement.py:251: LaTeX Error: Invalid UTF-8 byte "8E.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.251         """üîé 
-                      Returns the position of the movement at the time
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-) [37] (../python/spidercam_simulator/phase.py
-
-../python/spidercam_simulator/phase.py:11: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECå).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11     """üåî 
-                 A class for defining a phase"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:11: LaTeX Error: Invalid UTF-8 byte "94.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11     """üåî 
-                 A class for defining a phase"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:23: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECú).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23         """‚ú® 
-                    Initializes the Phase class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:23: LaTeX Error: Invalid UTF-8 byte "A8.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23         """‚ú® 
-                    Initializes the Phase class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[38]
-
-../python/spidercam_simulator/phase.py:53: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECî).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53         """üîÑ 
-                     Updates the phase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:53: LaTeX Error: Invalid UTF-8 byte "84.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53         """üîÑ 
-                     Updates the phase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:73: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73         """üìê 
-                     Returns the distance of the phase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:73: LaTeX Error: Invalid UTF-8 byte "90.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73         """üìê 
-                     Returns the distance of the phase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:81: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECè).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81         """‚è≥ 
-                    Returns the duration of the phase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:81: LaTeX Error: Invalid UTF-8 byte "B3.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81         """‚è≥ 
-                    Returns the duration of the phase
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:98: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98         """üìç 
-                     Returns the position of the phase after a given offset
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/phase.py:98: LaTeX Error: Invalid UTF-8 byte "8D.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98         """üìç 
-                     Returns the position of the phase after a given offset
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[39]) (../python/spidercam_simulator/plotter.py [40]
-
-../python/spidercam_simulator/plotter.py:8: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8     """üìä 
-                A class for plotting camera positions and rope lengths"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:8: LaTeX Error: Invalid UTF-8 byte "8A.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8     """üìä 
-                A class for plotting camera positions and rope lengths"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:19: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECú).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19         """‚ú® 
-                    Initializes the Plotter class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:19: LaTeX Error: Invalid UTF-8 byte "A8.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19         """‚ú® 
-                    Initializes the Plotter class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:47: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47         """üìà 
-                     Plots the camera positions
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:47: LaTeX Error: Invalid UTF-8 byte "88.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47         """üìà 
-                     Plots the camera positions
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[41] [42]
-
-../python/spidercam_simulator/plotter.py:110: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110         """üìà 
-                      Plots the rope lengths
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:110: LaTeX Error: Invalid UTF-8 byte "88.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110         """üìà 
-                      Plots the rope lengths
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:157: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157         """üìà 
-                      Plots the camera positions and rope lengths
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/plotter.py:157: LaTeX Error: Invalid UTF-8 byte "88.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157         """üìà 
-                      Plots the camera positions and rope lengths
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[43]) (../python/spidercam_simulator/spidercam.py
-
-../python/spidercam_simulator/spidercam.py:9: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECï).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9     """üï∑Ô∏è 
-                   A class for controlling the spidercam"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:9: LaTeX Error: Invalid UTF-8 byte "B7.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9     """üï∑Ô∏è 
-                   A class for controlling the spidercam"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:9: LaTeX Error: Invalid UTF-8 byte sequence (Ô\lst@EC∏\lst@ECè).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9     """üï∑Ô∏è 
-                   A class for controlling the spidercam"""
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:21: LaTeX Error: Invalid UTF-8 byte sequence (‚\lst@FillFixed@\lst@ECú).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21         """‚ú® 
-                    Initializes the Spidercam class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:21: LaTeX Error: Invalid UTF-8 byte "A8.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21         """‚ú® 
-                    Initializes the Spidercam class
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[44]
-
-../python/spidercam_simulator/spidercam.py:52: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECß).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52         """üßÆ 
-                     Calculates the constants for the spidercam
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:52: LaTeX Error: Invalid UTF-8 byte "AE.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52         """üßÆ 
-                     Calculates the constants for the spidercam
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:72: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECï).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72         """üïπÔ∏è 
-                        Moves the spidercam to a given position or updates t...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:72: LaTeX Error: Invalid UTF-8 byte "B9.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72         """üïπÔ∏è 
-                        Moves the spidercam to a given position or updates t...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:72: LaTeX Error: Invalid UTF-8 byte sequence (Ô\lst@EC∏\lst@ECè).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72         """üïπÔ∏è 
-                        Moves the spidercam to a given position or updates t...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[45] [46]
-
-../python/spidercam_simulator/spidercam.py:170: LaTeX Error: Invalid UTF-8 byte sequence (\lst@FillFixed@\lst@ECü\lst@ECì).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170         """üì° 
-                      Gets the position of the spidercam at a given time
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-../python/spidercam_simulator/spidercam.py:170: LaTeX Error: Invalid UTF-8 byte "A1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170         """üì° 
-                      Gets the position of the spidercam at a given time
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[47]))
+            Default family used instead on input line 244.
+ [55] [56] [57]) (./code/movement.py [58] [59] [60] [61] [62]) (./code/phase.py [63] [64] [65]) (./code/plotter.py [66] [67] [68]) (./code/spidercam.py [69] [70] [71] [72] [73])) [74]
 
 LaTeX Warning: Empty bibliography on input line 48.
 
 No complaints by nag.
-[48] (./main.aux)
+(./main.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
@@ -3047,18 +2064,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred when \ifx on line 21 was incomplete) 
 Here is how much of TeX's memory you used:
- 65967 strings out of 478287
- 1487277 string characters out of 5849288
- 2927814 words of memory out of 5000000
- 80988 multiletter control sequences out of 15000+600000
- 561272 words of font info for 409 fonts, out of 8000000 for 9000
+ 66739 strings out of 478287
+ 1505608 string characters out of 5849288
+ 2945403 words of memory out of 5000000
+ 81290 multiletter control sequences out of 15000+600000
+ 567860 words of font info for 495 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 114i,11n,108p,1035b,2678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,11n,108p,1039b,2682s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (48 pages, 1095203 bytes).
+Output written on main.pdf (74 pages, 4135457 bytes).
 PDF statistics:
- 2337 PDF objects out of 2487 (max. 8388607)
- 2221 compressed objects within 23 object streams
- 1646 named destinations out of 1728 (max. 500000)
- 134919 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 3034 PDF objects out of 3580 (max. 8388607)
+ 2824 compressed objects within 29 object streams
+ 1931 named destinations out of 2073 (max. 500000)
+ 135199 words of extra memory for PDF output out of 154059 (max. 10000000)
 

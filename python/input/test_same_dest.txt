@@ -1,0 +1,8 @@
+# Example where two consecutive instructions have the same destination
+dim 100 100 50
+start 0 0 0
+vmax 25
+amax 5
+freq 10
+0 90 50 10
+10 90 50 10

@@ -13,7 +13,7 @@ def plot_three_phases():
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
 
     # make ratio of the subplots equal
-    fig.set_size_inches(21, 3)
+    fig.set_size_inches(14, 3)
 
     # set the x and y labels
     ax1.set_xlabel("t")
@@ -116,7 +116,7 @@ def plot_two_phases():
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
 
     # make ratio of the subplots equal
-    fig.set_size_inches(21, 3)
+    fig.set_size_inches(14, 3)
 
     # set the x and y labels
     ax1.set_xlabel("t")

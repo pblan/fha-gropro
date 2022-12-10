@@ -1,0 +1,8 @@
+black
+configparser
+pdoc
+setuptools
+pylint
+numpy
+matplotlib
+pyflowchart 

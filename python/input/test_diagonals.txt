@@ -1,0 +1,11 @@
+# Example which travels diagonally
+dim 100 200 50
+start 0 0 0
+vmax 50
+amax 10
+freq 5
+# t x y z
+20 100 200 50
+40 0 200 0
+60 100 0 50
+80 0 0 0

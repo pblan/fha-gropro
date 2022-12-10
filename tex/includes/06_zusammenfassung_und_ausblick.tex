@@ -5,14 +5,24 @@
 \subsection{Zusammenfassung}
 \label{ssec:zusammenfassung}
 
-In dieser Arbeit wurde ein Programm zur $\ldots$ entwickelt.
+In dieser Arbeit wurde ein Programm zur Simulation einer Spidercam konzipiert und implementiert.
+Die Simulation wurde in der Programmiersprache Python realisiert.
+Entstanden ist ein Python-Modul, welches die Simulation einer Spidercam in einem beliebigen 3D-Raum ermöglicht.
+Eingabedateien können sowohl einzeln, als auch automatisch nacheinander verarbeitet werden.
 
-Dabei wurde $\ldots$.
-
-Die $\ldots$ wurden $\ldots$.
+Alle relevanten Testfälle wurden erfolgreich durchlaufen.
+Insbesondere wurde dies erkenntlich durch das Überprüfen der erstellten Logs in \texttt{python/logs/} und der erstellten Visualisierungen.
 
 % Ausblick
 \subsection{Ausblick}
 \label{ssec:ausblick}
 
-In Zukunft könnte man zur Optimierung $\ldots$.
+In Zukunft könnte man zur Optimierung beispielweise untersuchen, ob folgende Punkte Vorteile bringen:
+\begin{itemize}
+    \item Die Simulation in Echtzeit laufen lassen und Instruktionen live übertragen.
+    \item Bei nötigen Bremsphasen die Zielkoordinaten anpassen, sodass kürzere Wege zurückgelegt werden müssen.
+    \item Bei nötigen Brems- und Beschleunigungsphasen die Beschleunigung z. B. linear anpassen, damit die Bewegung nicht abrupt endet oder startet.
+    \item Die Anwendung in eine GUI einbinden.
+    \item Berechnungen parallelisieren.
+    \item Eine noch performantere Programmiersprache verwenden.
+\end{itemize}
